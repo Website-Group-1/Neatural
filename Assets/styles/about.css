@@ -1,0 +1,147 @@
+/* ROOT */
+:root {
+  --bg-main: #f7efe9;
+  --bg-soft: #f3eae4;
+
+  --text-main: #4b3832;
+  --text-muted: #7a5f58;
+
+  --accent-pink: #d8a7a7;
+  --accent-pink-soft: #e6cfc8;
+
+  --shadow-soft: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+/* ABOUT HERO */
+.about-hero {
+  margin-top: 5%;
+  text-align: center;
+  padding: 6em 20%;
+  background-image: url("/Assets/img/horizontal-banner-cosmetic-product-with-jade-roller-gua-sha.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-hero h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.about-hero p {
+  font-size: 1em;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+/* STORY */
+.about-story,
+.about-commitment {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4em;
+  align-items: center;
+  padding: 6em 10%;
+}
+
+.story-image img,
+.commitment-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.story-text h2, .commitment-text h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.story-text p, .commitment-text p {
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+}
+
+/* VALUES */
+.about-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  padding: 5em 10%;
+  background-color: var(--bg-soft);
+}
+
+.value-card {
+  background-color: var(--bg-main);
+  padding: 2em;
+  border-radius: 20px;
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+}
+
+.value-card h3 {
+  margin-bottom: 0.5em;
+}
+
+.value-card p {
+  font-size: 0.9em;
+  color: var(--text-muted);
+}
+
+/* HIGHLIGHT */
+.about-highlight {
+  background-color: var(--accent-pink-soft);
+  padding: 6em 0;
+  text-align: center;
+}
+
+.about-highlight h2 {
+  font-size: 2.2em;
+}
+
+/* CTA */
+.about-cta {
+  padding: 6em 0;
+  text-align: center;
+  background-color: var(--bg-soft);
+}
+
+.about-cta h2 {
+  margin-bottom: 1.5em;
+}
+
+.cta-btn {
+  padding: 14px 40px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--text-main);
+  border: 1px solid var(--text-main);
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: var(--text-main);
+  color: var(--bg-main);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .about-hero {
+    padding: 4em 8%;
+  }
+
+  .about-story,
+  .about-commitment {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-values {
+    grid-template-columns: 1fr;
+  }
+}

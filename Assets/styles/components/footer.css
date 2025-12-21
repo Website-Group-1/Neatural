@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+:root {
+    /* === BRAND COLORS === */
+    --color-primary: rgb(172, 148, 148);
+    --color-primary-dark: #7A4A4A;
+    --color-primary-light: #E2D6D6;
+
+    /* === NEUTRAL COLORS === */
+    --color-bg-light: #F5F3F2;
+    --color-bg-dark: #3F3333;
+
+    --color-text-main: #4b3a32;
+    --color-text-secondary: #6B5E5E;
+    --color-text-muted: #9B8F8F;
+
+    /* === ACCENT COLORS === */
+    --accent-pink: #d8a7a7;
+    --accent-pink-soft: #e6cfc8;
+
+    --contact-bg: #f3eae4;
+    --contact-cover: #d8a7a7;
+    --contact-text: #3f2e29;
+
+    /* Footer Background */
+    --footer-bg: #3f2e29;
+    /* warm dark brown */
+    --footer-bg-soft: #4b3832;
+    /* optional lighter brown */
+
+    /* Footer Text */
+    --footer-text-main: #f3eae4;
+    /* cream text */
+    --footer-text-muted: #cdb8b2;
+
+    /* Footer Accent */
+    --footer-accent: #d8a7a7;
+    /* soft dusty pink */
+
+    /* === BORDER & DIVIDER === */
+    --color-border: #D6CACA;
+    --color-divider: #CBBABA;
+
+    /* === UI STATES === */
+    --color-success: #6B8F7B;
+    --color-warning: #C2A15F;
+    --color-error: #B06A6A;
+
+    /* === SHADOWS === */
+    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --shadow-medium: 0 20px 40px rgba(0, 0, 0, 0.12);
+
+    /* === RADIUS === */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+}
+
+/* Footer Section */
+.footer {
+    background: var(--footer-bg-soft);
+    /* hijau gelap */
+    padding: 40px 10px 10px;
+    color: var(--footer-text-main);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--footer-bg-soft);
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+}
+
+.footer-brand img {
+    height: 100px;
+}
+
+.footer-brand h3 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.footer-newsletter span {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.newsletter-input {
+    display: flex;
+    background: var(--color-bg-light);
+    border-radius: var(--radius-sm);
+    padding: 6px;
+}
+
+.newsletter-input input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--color-text-main);
+    padding: 10px 16px;
+    width: 220px;
+}
+
+.newsletter-input button {
+    background: var(--color-primary-dark);
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-col h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    color: #9ca3af;
+}
+
+.footer-col a,
+.footer-col p {
+    display: block;
+    color: #e5e7eb;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-col a:hover {
+    color: var(--color-divider);
+    transform: translateX(2px);
+}
+
+.socials {
+    display: flex;
+    gap: 1em;
+}
+
+.socials a {
+    border-radius: 50%;
+}
+
+.socials a i {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.7em;
+    transition: all 0.3s ease-in-out;
+}
+
+.socials a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 12px var(--color-primary-dark);
+}
+
+.footer-bottom {
+    border-top: 1px solid #374151;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.footer-policy a {
+    margin-left: 20px;
+    color: #9ca3af;
+    text-decoration: none;
+}
+
+.footer-policy a:hover {
+    color: white;
+}

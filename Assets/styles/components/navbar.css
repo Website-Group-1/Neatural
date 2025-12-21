@@ -1,0 +1,149 @@
+:root {
+    /* === BRAND COLORS === */
+    --color-primary: rgb(172, 148, 148);
+    --color-primary-dark: #7A4A4A;
+    --color-primary-light: #E2D6D6;
+
+    /* === NEUTRAL COLORS === */
+    --color-bg-light: #F5F3F2;
+    --color-bg-dark: #3F3333;
+
+    --color-text-main: #4b3a32;
+    --color-text-secondary: #6B5E5E;
+    --color-text-muted: #9B8F8F;
+
+    /* === ACCENT COLORS === */
+    --accent-pink: #d8a7a7;
+    --accent-pink-soft: #e6cfc8;
+
+    --contact-bg: #f3eae4;
+    --contact-cover: #d8a7a7;
+    --contact-text: #3f2e29;
+
+    /* Footer Background */
+    --footer-bg: #3f2e29;
+    /* warm dark brown */
+    --footer-bg-soft: #4b3832;
+    /* optional lighter brown */
+
+    /* Footer Text */
+    --footer-text-main: #f3eae4;
+    /* cream text */
+    --footer-text-muted: #cdb8b2;
+
+    /* Footer Accent */
+    --footer-accent: #d8a7a7;
+    /* soft dusty pink */
+
+    /* === BORDER & DIVIDER === */
+    --color-border: #D6CACA;
+    --color-divider: #CBBABA;
+
+    /* === UI STATES === */
+    --color-success: #6B8F7B;
+    --color-warning: #C2A15F;
+    --color-error: #B06A6A;
+
+    /* === SHADOWS === */
+    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --shadow-medium: 0 20px 40px rgba(0, 0, 0, 0.12);
+
+    /* === RADIUS === */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    z-index: 1000;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+}
+
+.navbar {
+    position: relative;
+    height: 100%;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .navbar .logo a img {
+    height: 4em;
+}
+
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-links li {
+    margin: 0 5px;
+    list-style: none;
+}
+
+.nav-links li a {
+    position: relative;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--color-primary);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-links li a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 75%;
+    background-color: var(--color-primary);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.nav-links li:hover a::before {
+    opacity: 1;
+}
+
+.utils .utils-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.utils .utils-btn i {
+    font-size: 1.4em;
+    color: var(--color-primary);
+}
+
+.utils .cart-icon {
+    position: relative;
+}
+
+.utils .cart-icon span {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    font-size: 0.7em;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+}

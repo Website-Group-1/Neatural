@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Retinol Renewal Moisturizer",
+    "description": "A gentle retinol moisturizer that helps improve skin texture while keeping your skin hydrated and balanced.",
+    "price": 45000,
+    "image": "/Assets/img/products/retinol-moist-removeBg.png"
+  },
+  {
+    "id": 2,
+    "name": "Hydra Calm Face Cleanser",
+    "description": "A mild facial cleanser that removes impurities without stripping your skin’s natural moisture.",
+    "price": 38000,
+    "image": "/Assets/img/products/retinol-moist-removeBg.png"
+  },
+  {
+    "id": 3,
+    "name": "Brightening Vitamin C Serum",
+    "description": "A lightweight serum formulated to brighten dull skin and promote a healthy, radiant glow.",
+    "price": 52000,
+    "image": "/Assets/img/products/retinol-moist-removeBg.png"
+  },
+  {
+    "id": 4,
+    "name": "Soothing Aloe Toner",
+    "description": "A refreshing toner infused with aloe to soothe, hydrate, and prepare your skin for the next step.",
+    "price": 35000,
+    "image": "/Assets/img/products/retinol-moist-removeBg.png"
+  },
+  {
+    "id": 5,
+    "name": "Barrier Repair Night Cream",
+    "description": "A nourishing night cream designed to support skin barrier recovery while you sleep.",
+    "price": 49000,
+    "image": "/Assets/img/products/retinol-moist-removeBg.png"
+  },
+  {
+    "id": 6,
+    "name": "Daily UV Shield Sunscreen SPF 30",
+    "description": "A lightweight sunscreen that provides daily protection against harmful UV rays without a greasy feel.",
+    "price": 42000,
+    "image": "/Assets/img/products/retinol-moist-removeBg.png"
+  },
+  {
+    "id": 7,
+    "name": "Hydrating Hyaluronic Serum",
+    "description": "A deeply hydrating serum that helps maintain skin moisture and improves skin elasticity.",
+    "price": 48000,
+    "image": "/Assets/img/products/retinol-moist-removeBg.png"
+  },
+  {
+    "id": 8,
+    "name": "Gentle Exfoliating Face Scrub",
+    "description": "A soft exfoliating scrub that removes dead skin cells and reveals smoother-looking skin.",
+    "price": 40000,
+    "image": "/Assets/img/products/retinol-moist-removeBg.png"
+  },
+  {
+    "id": 9,
+    "name": "Calming Centella Essence",
+    "description": "A soothing essence formulated with centella to calm redness and strengthen the skin barrier.",
+    "price": 46000,
+    "image": "/Assets/img/products/retinol-moist-removeBg.png"
+  },
+  {
+    "id": 10,
+    "name": "Nourishing Lip Care Balm",
+    "description": "A nourishing lip balm that keeps lips soft, smooth, and comfortably moisturized.",
+    "price": 25000,
+    "image": "/Assets/img/products/retinol-moist-removeBg.png"
+  },
+  {
+    "id": 11,
+    "name": "Purifying Clay Mask",
+    "description": "A gentle clay mask that helps absorb excess oil and cleanse pores without over-drying.",
+    "price": 44000,
+    "image": "/Assets/img/products/retinol-moist-removeBg.png"
+  },
+  {
+    "id": 12,
+    "name": "Lightweight Day Moisturizer",
+    "description": "A daily moisturizer with a light texture that keeps your skin fresh and hydrated all day.",
+    "price": 43000,
+    "image": "/Assets/img/products/retinol-moist-removeBg.png"
+  }
+]

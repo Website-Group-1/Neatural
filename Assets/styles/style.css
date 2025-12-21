@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    height: 200vh;
+    background-color: #FAF4EF;
+}
+
+:root {
+    /* === BRAND COLORS === */
+    --color-primary: rgb(172, 148, 148);
+    --color-primary-dark: #7A4A4A;
+    --color-primary-light: #E2D6D6;
+
+    /* === NEUTRAL COLORS === */
+    --color-bg-light: #F5F3F2;
+    --color-bg-dark: #3F3333;
+
+    --color-text-main: #4b3a32;
+    --color-text-secondary: #6B5E5E;
+    --color-text-muted: #9B8F8F;
+
+    /* === ACCENT COLORS === */
+    --accent-pink: #d8a7a7;
+    --accent-pink-soft: #e6cfc8;
+
+    --contact-bg: #f3eae4;
+    --contact-cover: #d8a7a7;
+    --contact-text: #3f2e29;
+
+    /* Footer Background */
+    --footer-bg: #3f2e29;
+    /* warm dark brown */
+    --footer-bg-soft: #4b3832;
+    /* optional lighter brown */
+
+    /* Footer Text */
+    --footer-text-main: #f3eae4;
+    /* cream text */
+    --footer-text-muted: #cdb8b2;
+
+    /* Footer Accent */
+    --footer-accent: #d8a7a7;
+    /* soft dusty pink */
+
+    /* === BORDER & DIVIDER === */
+    --color-border: #D6CACA;
+    --color-divider: #CBBABA;
+
+    /* === UI STATES === */
+    --color-success: #6B8F7B;
+    --color-warning: #C2A15F;
+    --color-error: #B06A6A;
+
+    /* === SHADOWS === */
+    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --shadow-medium: 0 20px 40px rgba(0, 0, 0, 0.12);
+
+    /* === RADIUS === */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+}
+
+/* HOME */
+.container-hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+}
+
+.container-hero h2 {
+    font-size: 50px;
+    text-align: center;
+    color: var(--color-text-main);
+}
+
+.container-hero p {
+    font-size: medium;
+    margin-top: 30px;
+    text-align: center;
+    max-width: 1000px;
+    line-height: 1.6;
+    color: var(--color-primary-dark);
+}
+
+.container-hero .hero-btn {
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #000;
+    border: none;
+}
+
+.container-hero .hero-btn:hover {
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* picture */
+.container-picture {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.container-picture img {
+    width: 200px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Biar tinggi dan posisi beda-beda */
+.container-picture img:nth-child(1) {
+    height: 300px;
+    margin-top: 100px;
+}
+
+.container-picture img:nth-child(2) {
+    height: 350px;
+    margin-top: 20px;
+}
+
+.container-picture img:nth-child(3) {
+    height: 330px;
+    margin-top: 60px;
+}
+
+.container-picture img:nth-child(4) {
+    height: 300px;
+    margin-top: 40px;
+}
+
+/* Efek hover optional */
+.container-picture img:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-medium);
+}
+
+/* Catalog Section */
+.container-product {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7%;
+    background-color: var(--color-bg-light);
+    padding: 1em 0;
+    box-shadow: var(--shadow-soft);
+}
+
+.container-product h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    text-align: center;
+    color: var(--color-text-main);
+}
+
+.card-container {
+    display: flex;
+    gap: 2em;
+    padding: 2em 0;
+}
+
+/* CARD */
+.product-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+    transition: 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+}
+
+.product-card img {
+    height: 180px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.product-card p {
+    font-size: 13px;
+    color: var(--color-text-muted);
+    margin-bottom: 10px;
+}
+
+.product-card span {
+    font-weight: 600;
+    font-size: 1.3em;
+    color: var(--color-primary-dark);
+}
+
+.bottom-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom-card .product-btn {
+    padding: 0.7em;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: var(--color-primary-dark);
+    border-radius: var(--radius-sm);
+    transition: all 0.5s ease-in-out;
+}
+
+.bottom-card .product-btn:hover {
+    scale: 1.05;
+}
+
+.product-cta {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.cta-btn {
+    position: relative;
+    padding: 12px 36px;
+    border-radius: 999px;
+    font-size: 0.85em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: var(--color-text-main);
+    border: 1px solid var(--color-text-main);
+    background-color: transparent;
+    transition: all 0.35s ease;
+}
+
+.cta-btn:hover {
+    background-color: var(--color-text-main);
+    color: var(--color-bg-light);
+    transform: translateY(-2px);
+}
+
+.cta-btn::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 6px;
+    width: 0%;
+    height: 1px;
+    background-color: var(--color-bg-light);
+    transition: 0.35s ease;
+    transform: translateX(-50%);
+}
+
+.cta-btn:hover::after {
+    width: 60%;
+}
+
+
+/* About Section */
+.container-about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 90dvh;
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.left-side img {
+    height: 25em;
+    box-shadow: var(--shadow-medium);
+}
+
+.left-side .img-card.first {
+    position: relative;
+    bottom: 30px;
+}
+
+.left-side .img-card.second {
+    position: relative;
+    top: 40px;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    gap: 2em;
+}
+
+.right-side .top-text {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    color: var(--color-text-muted);
+}
+
+.right-side h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-text-main);
+}
+
+.right-side p {
+    width: 70%;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+}
+
+/* Contact Section */
+.contact-container {
+    margin: 0 auto;
+    padding: 40px 0;
+    background: var(--color-bg-light);
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    box-shadow: var(--shadow-soft);
+}
+
+.contact-text {
+    flex: 1;
+    padding: 0 4em;
+}
+
+.contact-text .label {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    color: var(--color-text-muted);
+    font-weight: 600;
+}
+
+.contact-text h2 {
+    color: var(--color-text-main);
+    font-size: 40px;
+    margin: 16px 0;
+}
+
+.contact-text p {
+    width: 95%;
+    text-align: justify;
+    font-size: 16px;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.contact-image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contact-image .cover-img {
+    display: flex;
+    align-items: center;
+    background-color: var(--accent-pink);
+    width: 700px;
+    padding: 0.5em;
+}
+
+.contact-image img {
+    width: 100%;
+    max-width: 420px;
+}
+
+/* Partnership Section */
+.container-partner {
+    height: 40dvh;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+
+.container-partner h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.marquee-track {
+    background-color: #FFFFFF;
+    padding: 2em 0;
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    animation: scroll 15s linear infinite;
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+            transparent,
+            black 10%,
+            black 90%,
+            transparent);
+}
+
+.container-partner .marquee-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-20%);
+    }
+}
