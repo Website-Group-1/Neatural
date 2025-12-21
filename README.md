@@ -40,7 +40,6 @@ This website focuses on a clean user interface, smooth user experience, and simp
 - **CSS3** — Styling, animation, and responsive layout  
 - **JavaScript (Vanilla JS)** — Application logic and interactivity  
 - **JSON** — Product data management  
-- **Local Storage API** — Cart persistence  
 
 ---
 
@@ -61,3 +60,8 @@ Neatural/
 ├── contact.html
 ├── about.html
 └── README.md
+```
+
+```text
+git clone https://github.com/Website-Group-1/Neatural.git
+```
