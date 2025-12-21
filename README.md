@@ -46,20 +46,49 @@ This website focuses on a clean user interface, smooth user experience, and simp
 ## 📂 Project Structure
 
 ```text
-Neatural/
+NEATURAL/
+│
 ├── Assets/
 │   ├── img/
-│   └── icons/
-├── scripts/
-│   ├── main.js
-│   └── dataProduct.json
+│   │   └── products/
+│   │       ├── 2.jpg
+│   │       ├── 3.jpg
+│   │       ├── 4.jpg
+│   │       └── ...
+│   ├── logo-website.png
+│   ├── logoipsum-398.svg
+│   ├── logoipsum-400.svg
+│   ├── logoipsum-414.svg
+│   └── ...
+│
 ├── styles/
+│   ├── components/
+│   │   ├── navbar.css
+│   │   ├── footer.css
+│   │   └── cartTab.css
+│   │
+│   ├── about.css
+│   ├── contact.css
+│   ├── product.css
 │   └── style.css
+│
+├── scripts/
+│   ├── dataProduct.json
+│   └── main.js
+│
+├── pages/
+│   ├── components/
+│   │    ├── faq.html
+│   │    ├── support.html
+│   │    └── ...
+│   ├── about.html
+│   ├── contact.html
+│   ├── product.html
+│   └── ...
+│
 ├── index.html
-├── product.html
-├── contact.html
-├── about.html
 └── README.md
+
 ```
 
 🚀 Getting Started
