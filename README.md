@@ -62,6 +62,17 @@ Neatural/
 └── README.md
 ```
 
+🚀 Getting Started
+---
+
+1. Clone this repository:
 ```text
 git clone https://github.com/Website-Group-1/Neatural.git
 ```
+2. Open the project folder:
+```text
+cd Neatural
+```
+3. Run the project :
+- Open index.html directly in your browser
+- Or use Live Server for a better development experience
