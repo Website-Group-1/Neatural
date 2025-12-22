@@ -5,10 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="../Assets/styles/contact.css" />
-    <link rel="stylesheet" href="../Assets/styles/components/navbar.css">
-    <link rel="stylesheet" href="../Assets/styles/components/cartTab.css">
-    <link rel="stylesheet" href="../Assets/styles/components/footer.css">
+    <link rel="stylesheet" href="../Assets/styles/components/navbar.css" />
+    <link rel="stylesheet" href="../Assets/styles/components/cartTab.css" />
+    <link rel="stylesheet" href="../Assets/styles/components/footer.css" />
+
+    <!-- Favicon -->
     <link rel="shortcut icon" href="../Assets/img/logo-website.png" type="image/x-icon">
 </head>
 
@@ -16,14 +20,16 @@
     <!-- NAVBAR -->
     <nav>
         <div class="navbar">
-            <span class="logo"><a href="#"><img src="/Assets/img/logo-website.png" alt="logo-website"></a></span>
+            <span class="logo">
+                <a href="../../home.html"><img src="../Assets/img/logo-website.png" alt="logo-website"></a>
+            </span>
 
             <div class="menu">
                 <ul class="nav-links">
-                    <li><a href="/pages/home.html">Home</a></li>
-                    <li><a href="/pages/product.html">Product</a></li>
-                    <li><a href="/pages/about.html">About</a></li>
-                    <li><a href="/pages/contact.html">Contact</a></li>
+                    <li><a href="../../home.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
 
@@ -43,10 +49,7 @@
             <hr>
         </div>
 
-        <!-- Card List -->
-        <div class="card-list">
-
-        </div>
+        <div class="card-list"></div>
 
         <div class="cart-tab-btn">
             <button class="close-btn"><i class="fa-solid fa-x"></i></button>
@@ -54,7 +57,7 @@
         </div>
     </div>
 
-    <!-- Contact -->
+    <!-- Contact Hero -->
     <section class="contact-hero">
         <h1>Contact Us</h1>
         <p>
@@ -63,6 +66,7 @@
         </p>
     </section>
 
+    <!-- Contact Container -->
     <section class="contact-container">
         <!-- LEFT -->
         <div class="contact-info">
@@ -71,19 +75,16 @@
                 <h4>Phone</h4>
                 <p>+62 812 3456 7890</p>
             </div>
-
             <div class="info-card">
                 <span><i class="fa-solid fa-message"></i></span>
                 <h4>WhatsApp</h4>
                 <p>+62 812 3456 7890</p>
             </div>
-
             <div class="info-card">
                 <span><i class="fa-solid fa-envelope"></i></span>
                 <h4>Email</h4>
                 <p>support@yourbrand.com</p>
             </div>
-
             <div class="info-card">
                 <span><i class="fa-solid fa-location-dot"></i></span>
                 <h4>Our Shop</h4>
@@ -91,18 +92,14 @@
             </div>
 
             <div class="map">
-                <iframe src="https://maps.google.com/maps?q=Yogyakarta&t=&z=13&ie=UTF8&iwloc=&output=embed">
-                </iframe>
+                <iframe src="https://maps.google.com/maps?q=Yogyakarta&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
             </div>
         </div>
 
         <!-- RIGHT -->
         <div class="contact-form">
             <h2>Get In Touch</h2>
-            <p>
-                Fill out the form below and our team will get back to you as soon as possible.
-            </p>
-
+            <p>Fill out the form below and our team will get back to you as soon as possible.</p>
             <form>
                 <input type="text" placeholder="Your Name" />
                 <input type="email" placeholder="Email Address" />
@@ -116,18 +113,12 @@
     <!-- Footer Section -->
     <footer class="footer">
         <div class="footer-container">
-
             <!-- TOP -->
             <div class="footer-top">
-
-                <!-- BRAND / CTA -->
                 <div class="footer-brand">
-                    <img src="/Assets/img/logo-website.png" alt="logo-website">
-                    <h3>Care For Your Skin –<br>
-                        Naturally, Every Day.</h3>
+                    <img src="../Assets/img/logo-website.png" alt="logo-website">
+                    <h3>Care For Your Skin –<br> Naturally, Every Day.</h3>
                 </div>
-
-                <!-- NEWSLETTER -->
                 <div class="footer-newsletter">
                     <span>Get In Touch!</span>
                     <div class="newsletter-input">
@@ -135,33 +126,28 @@
                         <button>Subscribe</button>
                     </div>
                 </div>
-
             </div>
 
             <!-- LINKS -->
             <div class="footer-links">
-
                 <div class="footer-col">
                     <h4>Contact Information</h4>
                     <p>neatural.group1@gmail.com</p>
                     <p>1800-2322-8686</p>
                 </div>
-
                 <div class="footer-col">
                     <h4>Company</h4>
-                    <a href="/pages/home.html">Home</a>
-                    <a href="/pages/about.html">About Us</a>
-                    <a href="/pages/contact.html">Contact</a>
-                    <a href="/pages/product.html">Product</a>
+                    <a href="../../home.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="product.html">Product</a>
                 </div>
-
                 <div class="footer-col">
                     <h4>Help</h4>
-                    <a href="/pages/components/faq.html">FAQ</a>
-                    <a href="/pages/components/help_center.html">Help Center</a>
-                    <a href="/pages/components/support.html">Support</a>
+                    <a href="components/faq.html">FAQ</a>
+                    <a href="components/help_center.html">Help Center</a>
+                    <a href="components/support.html">Support</a>
                 </div>
-
                 <div class="footer-col">
                     <h4>Follow Us</h4>
                     <div class="socials">
@@ -170,21 +156,20 @@
                         <a href="#"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
-
             </div>
 
             <!-- BOTTOM -->
             <div class="footer-bottom">
                 <p>© 2025 Neatural. All Rights Reserved.</p>
                 <div class="footer-policy">
-                    <a href="/pages/components/privacy.html">Privacy</a>
-                    <a href="/pages/components/terms_condition.html">Terms & Condition</a>
+                    <a href="components/privacy.html">Privacy</a>
+                    <a href="components/terms_condition.html">Terms & Condition</a>
                 </div>
             </div>
-
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://kit.fontawesome.com/ebb2aa59d3.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../scripts/main.js"></script>
