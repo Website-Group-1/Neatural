@@ -390,17 +390,6 @@ body {
 }
 
 /* Partnership Section */
-.partnership {
-    margin: 100px 0;
-    text-align: center;
-}
-
-.partnership h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-/* Carousel wrapper */
 .container-partnership {
     margin: 4em 0;
     background: #faf7f7;
@@ -418,17 +407,6 @@ body {
     color: var(--color-text-main);
 }
 
-.partnership {
-    margin: 100px 0;
-    text-align: center;
-}
-
-.partnership h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-/* Carousel wrapper */
 .carousel {
     display: flex;
     overflow: hidden;
@@ -436,7 +414,6 @@ body {
     position: relative;
 }
 
-/* Group that moves */
 .group {
     display: flex;
     align-items: center;
@@ -446,12 +423,10 @@ body {
     margin: 2em 0;
 }
 
-/* Pause on hover */
 .carousel:hover .group {
     animation-play-state: paused;
 }
 
-/* Card */
 .card {
     flex: 0 0 5em auto;
     width: 14em;
