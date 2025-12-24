@@ -10,7 +10,7 @@ const searchInput = document.querySelector("#searchProduct");
 
 let listProducts = [];
 let listCartProducts = [];
-const listHomeProducts = [4, 3, 2, 8];
+const listHomeProducts = [4, 3, 11, 8];
 
 cartButton?.addEventListener("click", () => {
     cartTab.classList.add("active");
@@ -65,7 +65,6 @@ const clearCart = () => {
     listCartProducts = [];
     localStorage.removeItem("cart");
     addToCartHTML();
-    homeProductToHTML();
     updateTotalCart();
 };
 
@@ -247,6 +246,16 @@ const updateTotalCart = () => {
         0
     );
 
+    if (total === 0) {
+        totalCart.style.display = "none";
+        totalCart.textContent = "";
+        return;
+    } else if (total > 9) {
+        totalCart.textContent = `9+`;
+        return;
+    }
+
+    totalCart.style.display = "flex";
     totalCart.textContent = total;
 };
 
@@ -285,11 +294,9 @@ const initData = () => {
             }
 
             const cartData = localStorage.getItem("cart");
-            if (cartData) {
-                listCartProducts = JSON.parse(cartData);
-                addToCartHTML();
-                updateTotalCart();
-            }
+            listCartProducts = cartData ? JSON.parse(cartData) : [];
+            addToCartHTML();
+            updateTotalCart();
         });
 };
 
