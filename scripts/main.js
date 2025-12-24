@@ -5,9 +5,12 @@ const listProductsHTML = document.querySelector(".product-grid");
 const totalCart = document.querySelector(".totalCart");
 const cardList = document.querySelector(".card-list");
 const checkoutButton = document.querySelector(".checkout-btn");
+const homeCardContainerHTML = document.querySelector(".card-container");
+const searchInput = document.querySelector("#searchProduct");
 
 let listProducts = [];
 let listCartProducts = [];
+const listHomeProducts = [4, 3, 2, 8];
 
 cartButton?.addEventListener("click", () => {
     cartTab.classList.add("active");
@@ -16,6 +19,18 @@ cartButton?.addEventListener("click", () => {
 closeButton?.addEventListener("click", () => {
     cartTab.classList.remove("active");
 });
+
+searchInput?.addEventListener("input", (e) => {
+    const keyword = e.target.value.toLowerCase();
+
+    const filteredProducts = listProducts.filter(product =>
+        product.name.toLowerCase().includes(keyword)
+    );
+
+    renderFilteredProducts(filteredProducts);
+});
+
+
 
 checkoutButton?.addEventListener("click", () => {
     if (listCartProducts.length === 0) {
@@ -50,8 +65,75 @@ const clearCart = () => {
     listCartProducts = [];
     localStorage.removeItem("cart");
     addToCartHTML();
+    homeProductToHTML();
     updateTotalCart();
 };
+
+const filterProductsByName = (keyword) => {
+    const filtered = listProducts.filter(product =>
+        product.name.toLowerCase().includes(keyword.toLowerCase())
+    );
+
+    renderFilteredProducts(filtered);
+};
+
+
+function renderHomeProducts(products) {
+    homeCardContainerHTML.innerHTML = "";
+
+    products.forEach(product => {
+        const card = document.createElement("div");
+        card.className = "product-card";
+        card.dataset.id = product.id;
+
+        card.innerHTML = `
+            <img src="${product.image}" alt="${product.name}">
+            <h3>${product.name}</h3>
+            <p>${product.description}</p>
+            <div class="bottom-card">
+                <span>Rp. ${product.price.toLocaleString("id-ID")}</span>
+                <button class="product-btn">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+            </div>
+        `;
+
+        homeCardContainerHTML.appendChild(card);
+    });
+}
+
+const renderFilteredProducts = (products) => {
+    if (!listProductsHTML) return;
+
+    listProductsHTML.innerHTML = "";
+
+    if (products.length === 0) {
+        listProductsHTML.innerHTML = `<p>Product not found</p>`;
+        return;
+    }
+
+    products.forEach(product => {
+        const card = document.createElement("div");
+        card.className = "product-card";
+        card.dataset.id = product.id;
+
+        card.innerHTML = `
+            <img src="${product.image}" alt="${product.name}">
+            <h3>${product.name}</h3>
+            <p>${product.description}</p>
+            <div class="bottom-card">
+                <span>Rp. ${product.price.toLocaleString("id-ID")}</span>
+                <button class="product-btn">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+            </div>
+        `;
+
+        listProductsHTML.appendChild(card);
+    });
+};
+
+
 
 const addDataToHTML = () => {
     if (!listProductsHTML) return;
@@ -176,12 +258,31 @@ listProductsHTML?.addEventListener("click", (event) => {
     addToCart(card.dataset.id);
 });
 
+homeCardContainerHTML?.addEventListener("click", (event) => {
+    const button = event.target.closest(".product-btn");
+    if (!button) return;
+
+    const card = button.closest(".product-card");
+    if (!card) return;
+
+    addToCart(card.dataset.id);
+});
+
+
 const initData = () => {
     fetch("/scripts/dataProduct.json")
         .then(res => res.json())
         .then(data => {
             listProducts = data;
             addDataToHTML();
+
+            if (homeCardContainerHTML) {
+                const homeProducts = listProducts.filter(product =>
+                    listHomeProducts.includes(product.id)
+                );
+
+                renderHomeProducts(homeProducts);
+            }
 
             const cartData = localStorage.getItem("cart");
             if (cartData) {
