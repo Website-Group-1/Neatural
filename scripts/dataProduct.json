@@ -4,83 +4,146 @@
     "name": "Retinol Renewal Moisturizer",
     "description": "A gentle retinol moisturizer that helps improve skin texture while keeping your skin hydrated and balanced.",
     "price": 45000,
-    "image": "/Assets/img/products/retinol-moist-removeBg.png"
+    "image": "/Assets/img/products/(1)retinol renewal moist.png"
   },
   {
     "id": 2,
-    "name": "Hydra Calm Face Cleanser",
-    "description": "A mild facial cleanser that removes impurities without stripping your skin’s natural moisture.",
+    "name": "Kiwi 3D Acid Acne Moisturizer 30gr",
+    "description": "A lightweight moisturizer that helps maintain moisture in acne-prone skin, soothes skin, and helps control excess oil.",
     "price": 38000,
-    "image": "/Assets/img/products/retinol-moist-removeBg.png"
+    "image": "/Assets/img/products/(2)Kiwi 3D Acid Acne Moisturizer 30gr.png"
   },
   {
     "id": 3,
-    "name": "Brightening Vitamin C Serum",
-    "description": "A lightweight serum formulated to brighten dull skin and promote a healthy, radiant glow.",
+    "name": "centella shooting gel moisturizer",
+    "description": "A moisturizer that helps soothe skin, reduce redness, and maintain healthy skin moisture..",
     "price": 52000,
-    "image": "/Assets/img/products/retinol-moist-removeBg.png"
+    "image": "/Assets/img/products/(3)centella shooting gel moisturizer.png"
   },
   {
     "id": 4,
-    "name": "Soothing Aloe Toner",
-    "description": "A refreshing toner infused with aloe to soothe, hydrate, and prepare your skin for the next step.",
+    "name": "Ceramide Moisturiser Blueberry",
+    "description": "Light moisturizer with blueberry extract which helps maintain skin moisture and soothes the skin.",
     "price": 35000,
-    "image": "/Assets/img/products/retinol-moist-removeBg.png"
+    "image": "/Assets/img/products/(4)Ceramide Moisturiser Blueberry Reduces Redness Acnes Soft Skin 30g _ eBay.png"
   },
   {
     "id": 5,
-    "name": "Barrier Repair Night Cream",
-    "description": "A nourishing night cream designed to support skin barrier recovery while you sleep.",
+    "name": "Yuja Symwhite 377 Dark Spot Moisturizer 30gr",
+    "description": "helps brighten and disguise black spots from acne scars",
     "price": 49000,
-    "image": "/Assets/img/products/retinol-moist-removeBg.png"
+    "image": "/Assets/img/products/(5)Yuja Symwhite 377 Dark Spot Moisturizer 30gr.png"
   },
   {
     "id": 6,
-    "name": "Daily UV Shield Sunscreen SPF 30",
-    "description": "A lightweight sunscreen that provides daily protection against harmful UV rays without a greasy feel.",
+    "name": "Moisturizer Pomegrante Brightening",
+    "description": "helps brighten and even out skin tone.",
     "price": 42000,
-    "image": "/Assets/img/products/retinol-moist-removeBg.png"
+    "image": "/Assets/img/products/(6)MOISTURIZER POMEGRANTE __ GLAD 2 GLOW MOISTURIZER POMEGRANATE 5 _ Shopee Indonesia.png"
   },
   {
     "id": 7,
-    "name": "Hydrating Hyaluronic Serum",
-    "description": "A deeply hydrating serum that helps maintain skin moisture and improves skin elasticity.",
+    "name": "Bluebarry Ceramide Gel Cleanser",
+    "description": "maintains skin moisture and helps control excess oil on the face..",
     "price": 48000,
-    "image": "/Assets/img/products/retinol-moist-removeBg.png"
+    "image": "/Assets/img/products/(7)Glad2glow Blueberry Ceramide Low Ph Gel Cleanser (70ml) Facial Face Wash.png"
   },
   {
     "id": 8,
-    "name": "Gentle Exfoliating Face Scrub",
-    "description": "A soft exfoliating scrub that removes dead skin cells and reveals smoother-looking skin.",
+    "name": "Milk Amino Acids Gentle Cleanser",
+    "description": "keeps the skin moist and cares for the skin barrier, and makes the skin clean and bright.",
     "price": 40000,
-    "image": "/Assets/img/products/retinol-moist-removeBg.png"
+    "image": "/Assets/img/products/(8) Milk Amino Acids Gentle Cleanser.png"
   },
   {
     "id": 9,
-    "name": "Calming Centella Essence",
-    "description": "A soothing essence formulated with centella to calm redness and strengthen the skin barrier.",
+    "name": "Anti Acne Centella Gel Cleanser",
+    "description": "soothes acne-prone skin and can maintain the skin's skin barrier.",
     "price": 46000,
-    "image": "/Assets/img/products/retinol-moist-removeBg.png"
+    "image": "/Assets/img/products/(9) Anti Acne Centella Gel Cleanser.png"
   },
   {
     "id": 10,
-    "name": "Nourishing Lip Care Balm",
-    "description": "A nourishing lip balm that keeps lips soft, smooth, and comfortably moisturized.",
+    "name": "Centella Ceramide Shooting Toner",
+    "description": "soothes and relieves acne or redness on the skin.",
     "price": 25000,
-    "image": "/Assets/img/products/retinol-moist-removeBg.png"
+    "image": "/Assets/img/products/(10)𝐆𝐋𝐀𝐃𝟐𝐆𝐋𝐎𝐖 𝐂𝐞𝐧𝐭𝐞𝐥𝐥𝐚 𝟐 𝐂𝐞𝐫𝐚𝐦𝐢𝐝𝐞 𝐒𝐨𝐨𝐭𝐡𝐢𝐧𝐠 𝐓𝐨𝐧𝐞𝐫 𝟖𝟎𝐦𝐥.png"
   },
   {
     "id": 11,
-    "name": "Purifying Clay Mask",
-    "description": "A gentle clay mask that helps absorb excess oil and cleanse pores without over-drying.",
+    "name": "Blackbarry Exfoliating Toner",
+    "description": "moisturizes the skin and the combination of AHA BHA PHA effectively removes dead skin cells.",
     "price": 44000,
-    "image": "/Assets/img/products/retinol-moist-removeBg.png"
+    "image": "/Assets/img/products/(11)Blackberry Aha Bha Pha Exfoliating Toner Skincare Brightening 80ml.png"
   },
   {
     "id": 12,
-    "name": "Lightweight Day Moisturizer",
-    "description": "A daily moisturizer with a light texture that keeps your skin fresh and hydrated all day.",
+    "name": "Pomegranate Niacinamide Toner",
+    "description": "helps brighten and even out skin tone.",
     "price": 43000,
-    "image": "/Assets/img/products/retinol-moist-removeBg.png"
+    "image": "/Assets/img/products/(12)Toner_series-removebg-preview.png"
+  },
+  {
+    "id": 13,
+    "name": "Pomegranate Brightening Serum",
+    "description": "brighten facial skin in 7 days.",
+    "price": 43000,
+    "image": "/Assets/img/products/(13)Pomegranate Brightening Serum.png"
+  },
+  {
+    "id": 14,
+    "name": "Centella 2% Salicylic Acid Power Acne Serum",
+    "description": "soothes and relieves acne or redness.",
+    "price": 43000,
+    "image": "/Assets/img/products/(14)Centella 2 Salicylic Acid Power Acne Serum.png"
+  },
+  {
+    "id": 15,
+    "name": "Yuja Symwhite 377 Dark Spot Serum",
+    "description": "helps disguise black spots from acne scars and red marks.",
+    "price": 43000,
+    "image": "/Assets/img/products/(15)Yuja_Symwhite_377_Dark_Spot_Serum_17ml-removebg-preview.png"
+  },
+  {
+    "id": 16,
+    "name": "Retinol Serum Glow",
+    "description": "helps even out skin tone and reduce the appearance of dark spots or hyperpigmentation.",
+    "price": 43000,
+    "image": "/Assets/img/products/(16)Retinol_Serum_Glow-removebg-preview.png"
+  },
+  {
+    "id": 17,
+    "name": "Peeling Solution",
+    "description": "helps control excess oil and shrink pores.",
+    "price": 43000,
+    "image": "/Assets/img/products/(17) peeling serum.png"
+  },
+  {
+    "id": 18,
+    "name": "Niacinamide Brightening Clay Stick",
+    "description": "brightens and softens textured skin.",
+    "price": 43000,
+    "image": "/Assets/img/products/(18)niacinamide brightening claystick.png"
+  },
+  {
+    "id": 19,
+    "name": "Mughwort Clay Stick",
+    "description": "treating acne-prone skin..",
+    "price": 43000,
+    "image": "/Assets/img/products/(19Glad2Glow Mugwort Clay Mask Masker Wajah _ Shopee Indonesia.png"
+  },
+  {
+    "id": 20,
+    "name": "Niacinamide Micellar Water ",
+    "description": "Cleanses the face from excess oil, dirt, and even waterproof makeup without feeling sticky.",
+    "price": 43000,
+    "image": "/Assets/img/products/(20) micwllar water brightening.png"
+  },
+  {
+    "id": 21,
+    "name": "Centella Micelar Water",
+    "description": "helps treat acne-prone skin and prevents acne growth due to makeup, excess oil, and dirt..",
+    "price": 43000,
+    "image": "/Assets/img/products/(21)micellar water centella.png"
   }
 ]
