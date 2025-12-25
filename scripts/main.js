@@ -6,8 +6,9 @@ const totalCart = document.querySelector(".totalCart");
 const cardList = document.querySelector(".card-list");
 const checkoutButton = document.querySelector(".checkout-btn");
 const homeCardContainerHTML = document.querySelector(".card-container");
-const searchInput = document.querySelector("#searchProduct");
+const searchInput = document.getElementById("searchProduct");
 const paginationContainer = document.querySelector(".pagination");
+const langToggle = document.getElementById("langToggle");
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 
@@ -17,6 +18,26 @@ const listHomeProducts = [4, 3, 11, 8];
 let currentPage = 1;
 let currentProducts = [];
 const ITEMS_PER_PAGE = 12;
+let currentLang = localStorage.getItem("lang") || "en";
+
+const loadLanguage = async (lang) => {
+    const res = await fetch(`/lang/${lang}.json`);
+    langData = await res.json();
+    applyLanguage();
+    localStorage.setItem("lang", lang);
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (currentLang === "id") {
+        langToggle.checked = true;
+    }
+    loadLanguage(currentLang);
+});
+
+langToggle?.addEventListener("change", () => {
+    currentLang = langToggle.checked ? "id" : "en";
+    loadLanguage(currentLang);
+});
 
 cartButton?.addEventListener("click", () => {
     cartTab.classList.add("active");
@@ -166,7 +187,7 @@ const renderPagination = (totalItems) => {
     /* ===== PREV ===== */
     const prevBtn = document.createElement("button");
     prevBtn.innerHTML = "<i class='fa-solid fa-arrow-left'></i>";
-        if (currentPage === 1) {
+    if (currentPage === 1) {
         prevBtn.style.display = "none";
     }
 
