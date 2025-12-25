@@ -166,7 +166,9 @@ const renderPagination = (totalItems) => {
     /* ===== PREV ===== */
     const prevBtn = document.createElement("button");
     prevBtn.innerHTML = "<i class='fa-solid fa-arrow-left'></i>";
-    prevBtn.disabled = currentPage === 1;
+        if (currentPage === 1) {
+        prevBtn.style.display = "none";
+    }
 
     prevBtn.addEventListener("click", () => {
         paginateProducts(currentProducts, currentPage - 1);
@@ -205,7 +207,9 @@ const renderPagination = (totalItems) => {
     /* ===== NEXT ===== */
     const nextBtn = document.createElement("button");
     nextBtn.innerHTML = "<i class='fa-solid fa-arrow-right'></i>";
-    nextBtn.disabled = currentPage === totalPages;
+    if (currentPage === totalPages) {
+        nextBtn.style.display = "none";
+    }
 
     nextBtn.addEventListener("click", () => {
         paginateProducts(currentProducts, currentPage + 1);
