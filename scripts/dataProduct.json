@@ -1,148 +1,274 @@
 [
   {
     "id": 1,
-    "name": "Retinol Renewal Moisturizer",
-    "description": "A gentle retinol moisturizer that helps improve skin texture while keeping your skin hydrated and balanced.",
+    "name": {
+      "id": "Pelembap Retinol Renewal",
+      "en": "Retinol Renewal Moisturizer"
+    },
+    "description": {
+      "id": "Pelembap retinol lembut yang membantu memperbaiki tekstur kulit sekaligus menjaga kelembapan dan keseimbangan kulit.",
+      "en": "A gentle retinol moisturizer that helps improve skin texture while keeping your skin hydrated and balanced."
+    },
     "price": 45000,
     "image": "/Assets/img/products/(1)retinol renewal moist.png"
   },
   {
     "id": 2,
-    "name": "Kiwi 3D Acid Acne Moisturizer 30gr",
-    "description": "A lightweight moisturizer that helps maintain moisture in acne-prone skin, soothes skin, and helps control excess oil.",
+    "name": {
+      "id": "Kiwi 3D Acid Acne Moisturizer 30gr",
+      "en": "Kiwi 3D Acid Acne Moisturizer 30gr"
+    },
+    "description": {
+      "id": "Pelembap ringan yang membantu menjaga kelembapan kulit berjerawat, menenangkan kulit, dan mengontrol minyak berlebih.",
+      "en": "A lightweight moisturizer that helps maintain moisture in acne-prone skin, soothes skin, and helps control excess oil."
+    },
     "price": 38000,
     "image": "/Assets/img/products/(2)Kiwi 3D Acid Acne Moisturizer 30gr.png"
   },
   {
     "id": 3,
-    "name": "centella shooting gel moisturizer",
-    "description": "A moisturizer that helps soothe skin, reduce redness, and maintain healthy skin moisture..",
+    "name": {
+      "id": "Centella Shooting Gel Moisturizer",
+      "en": "Centella Shooting Gel Moisturizer"
+    },
+    "description": {
+      "id": "Pelembap yang membantu menenangkan kulit, mengurangi kemerahan, dan menjaga kelembapan kulit.",
+      "en": "A moisturizer that helps soothe skin, reduce redness, and maintain healthy skin moisture."
+    },
     "price": 52000,
     "image": "/Assets/img/products/(3)centella shooting gel moisturizer.png"
   },
   {
     "id": 4,
-    "name": "Ceramide Moisturiser Blueberry",
-    "description": "Light moisturizer with blueberry extract which helps maintain skin moisture and soothes the skin.",
+    "name": {
+      "id": "Ceramide Moisturizer Blueberry",
+      "en": "Ceramide Moisturiser Blueberry"
+    },
+    "description": {
+      "id": "Pelembap ringan dengan ekstrak blueberry yang membantu menjaga kelembapan dan menenangkan kulit.",
+      "en": "Light moisturizer with blueberry extract which helps maintain skin moisture and soothes the skin."
+    },
     "price": 35000,
     "image": "/Assets/img/products/(4)Ceramide Moisturiser Blueberry Reduces Redness Acnes Soft Skin 30g _ eBay.png"
   },
   {
     "id": 5,
-    "name": "Yuja Symwhite 377 Dark Spot Moisturizer 30gr",
-    "description": "helps brighten and disguise black spots from acne scars",
+    "name": {
+      "id": "Yuja Symwhite 377 Dark Spot Moisturizer 30gr",
+      "en": "Yuja Symwhite 377 Dark Spot Moisturizer 30gr"
+    },
+    "description": {
+      "id": "Membantu mencerahkan dan menyamarkan noda hitam bekas jerawat.",
+      "en": "Helps brighten and disguise black spots from acne scars."
+    },
     "price": 49000,
     "image": "/Assets/img/products/(5)Yuja Symwhite 377 Dark Spot Moisturizer 30gr.png"
   },
   {
     "id": 6,
-    "name": "Moisturizer Pomegrante Brightening",
-    "description": "helps brighten and even out skin tone.",
+    "name": {
+      "id": "Moisturizer Pomegranate Brightening",
+      "en": "Moisturizer Pomegrante Brightening"
+    },
+    "description": {
+      "id": "Membantu mencerahkan dan meratakan warna kulit.",
+      "en": "Helps brighten and even out skin tone."
+    },
     "price": 42000,
     "image": "/Assets/img/products/(6)MOISTURIZER POMEGRANTE __ GLAD 2 GLOW MOISTURIZER POMEGRANATE 5 _ Shopee Indonesia.png"
   },
   {
     "id": 7,
-    "name": "Bluebarry Ceramide Gel Cleanser",
-    "description": "maintains skin moisture and helps control excess oil on the face..",
+    "name": {
+      "id": "Blueberry Ceramide Gel Cleanser",
+      "en": "Bluebarry Ceramide Gel Cleanser"
+    },
+    "description": {
+      "id": "Menjaga kelembapan kulit dan membantu mengontrol minyak berlebih di wajah.",
+      "en": "Maintains skin moisture and helps control excess oil on the face."
+    },
     "price": 48000,
     "image": "/Assets/img/products/(7)Glad2glow Blueberry Ceramide Low Ph Gel Cleanser (70ml) Facial Face Wash.png"
   },
   {
     "id": 8,
-    "name": "Milk Amino Acids Gentle Cleanser",
-    "description": "keeps the skin moist and cares for the skin barrier, and makes the skin clean and bright.",
+    "name": {
+      "id": "Milk Amino Acids Gentle Cleanser",
+      "en": "Milk Amino Acids Gentle Cleanser"
+    },
+    "description": {
+      "id": "Membersihkan wajah sambil menjaga kelembapan dan memperkuat skin barrier.",
+      "en": "Keeps the skin moist and cares for the skin barrier, and makes the skin clean and bright."
+    },
     "price": 40000,
     "image": "/Assets/img/products/(8) Milk Amino Acids Gentle Cleanser.png"
   },
   {
     "id": 9,
-    "name": "Anti Acne Centella Gel Cleanser",
-    "description": "soothes acne-prone skin and can maintain the skin's skin barrier.",
+    "name": {
+      "id": "Anti Acne Centella Gel Cleanser",
+      "en": "Anti Acne Centella Gel Cleanser"
+    },
+    "description": {
+      "id": "Menenangkan kulit berjerawat dan membantu menjaga skin barrier.",
+      "en": "Soothes acne-prone skin and can maintain the skin's skin barrier."
+    },
     "price": 46000,
     "image": "/Assets/img/products/(9) Anti Acne Centella Gel Cleanser.png"
   },
   {
     "id": 10,
-    "name": "Centella Ceramide Shooting Toner",
-    "description": "soothes and relieves acne or redness on the skin.",
+    "name": {
+      "id": "Centella Ceramide Soothing Toner",
+      "en": "Centella Ceramide Shooting Toner"
+    },
+    "description": {
+      "id": "Menenangkan kulit serta membantu meredakan jerawat dan kemerahan.",
+      "en": "Soothes and relieves acne or redness on the skin."
+    },
     "price": 25000,
     "image": "/Assets/img/products/(10)𝐆𝐋𝐀𝐃𝟐𝐆𝐋𝐎𝐖 𝐂𝐞𝐧𝐭𝐞𝐥𝐥𝐚 𝟐 𝐂𝐞𝐫𝐚𝐦𝐢𝐝𝐞 𝐒𝐨𝐨𝐭𝐡𝐢𝐧𝐠 𝐓𝐨𝐧𝐞𝐫 𝟖𝟎𝐦𝐥.png"
   },
   {
     "id": 11,
-    "name": "Blackbarry Exfoliating Toner",
-    "description": "moisturizes the skin and the combination of AHA BHA PHA effectively removes dead skin cells.",
+    "name": {
+      "id": "Blackberry Exfoliating Toner",
+      "en": "Blackbarry Exfoliating Toner"
+    },
+    "description": {
+      "id": "Melembapkan kulit dan membantu mengangkat sel kulit mati dengan kombinasi AHA, BHA, dan PHA.",
+      "en": "Moisturizes the skin and the combination of AHA BHA PHA effectively removes dead skin cells."
+    },
     "price": 44000,
     "image": "/Assets/img/products/(11)Blackberry Aha Bha Pha Exfoliating Toner Skincare Brightening 80ml.png"
   },
   {
     "id": 12,
-    "name": "Pomegranate Niacinamide Toner",
-    "description": "helps brighten and even out skin tone.",
+    "name": {
+      "id": "Pomegranate Niacinamide Toner",
+      "en": "Pomegranate Niacinamide Toner"
+    },
+    "description": {
+      "id": "Membantu mencerahkan dan meratakan warna kulit.",
+      "en": "Helps brighten and even out skin tone."
+    },
     "price": 43000,
     "image": "/Assets/img/products/(12)Toner_series-removebg-preview.png"
   },
   {
     "id": 13,
-    "name": "Pomegranate Brightening Serum",
-    "description": "brighten facial skin in 7 days.",
+    "name": {
+      "id": "Pomegranate Brightening Serum",
+      "en": "Pomegranate Brightening Serum"
+    },
+    "description": {
+      "id": "Membantu mencerahkan kulit wajah hanya dalam 7 hari.",
+      "en": "Brighten facial skin in 7 days."
+    },
     "price": 43000,
     "image": "/Assets/img/products/(13)Pomegranate Brightening Serum.png"
   },
   {
     "id": 14,
-    "name": "Centella 2% Salicylic Acid Power Acne Serum",
-    "description": "soothes and relieves acne or redness.",
+    "name": {
+      "id": "Centella Salicylic Acid Acne Serum",
+      "en": "Centella 2% Salicylic Acid Power Acne Serum"
+    },
+    "description": {
+      "id": "Membantu meredakan jerawat serta menenangkan kulit yang iritasi.",
+      "en": "Soothes and relieves acne or redness."
+    },
     "price": 43000,
     "image": "/Assets/img/products/(14)Centella 2 Salicylic Acid Power Acne Serum.png"
   },
   {
     "id": 15,
-    "name": "Yuja Symwhite 377 Dark Spot Serum",
-    "description": "helps disguise black spots from acne scars and red marks.",
+    "name": {
+      "id": "Yuja Symwhite Dark Spot Serum",
+      "en": "Yuja Symwhite 377 Dark Spot Serum"
+    },
+    "description": {
+      "id": "Membantu menyamarkan noda hitam serta bekas jerawat dan kemerahan.",
+      "en": "Helps disguise black spots from acne scars and red marks."
+    },
     "price": 43000,
     "image": "/Assets/img/products/(15)Yuja_Symwhite_377_Dark_Spot_Serum_17ml-removebg-preview.png"
   },
   {
     "id": 16,
-    "name": "Retinol Serum Glow",
-    "description": "helps even out skin tone and reduce the appearance of dark spots or hyperpigmentation.",
+    "name": {
+      "id": "Retinol Glow Serum",
+      "en": "Retinol Serum Glow"
+    },
+    "description": {
+      "id": "Membantu meratakan warna kulit dan mengurangi hiperpigmentasi.",
+      "en": "Helps even out skin tone and reduce the appearance of dark spots or hyperpigmentation."
+    },
     "price": 43000,
     "image": "/Assets/img/products/(16)Retinol_Serum_Glow-removebg-preview.png"
   },
   {
     "id": 17,
-    "name": "Peeling Solution",
-    "description": "helps control excess oil and shrink pores.",
+    "name": {
+      "id": "Peeling Solution",
+      "en": "Peeling Solution"
+    },
+    "description": {
+      "id": "Membantu mengontrol minyak berlebih dan mengecilkan pori-pori.",
+      "en": "Helps control excess oil and shrink pores."
+    },
     "price": 43000,
     "image": "/Assets/img/products/(17) peeling serum.png"
   },
   {
     "id": 18,
-    "name": "Niacinamide Brightening Clay Stick",
-    "description": "brightens and softens textured skin.",
+    "name": {
+      "id": "Niacinamide Brightening Clay Stick",
+      "en": "Niacinamide Brightening Clay Stick"
+    },
+    "description": {
+      "id": "Membantu mencerahkan dan menghaluskan tekstur kulit.",
+      "en": "Brightens and softens textured skin."
+    },
     "price": 43000,
     "image": "/Assets/img/products/(18)niacinamide brightening claystick.png"
   },
   {
     "id": 19,
-    "name": "Mughwort Clay Stick",
-    "description": "treating acne-prone skin..",
+    "name": {
+      "id": "Mugwort Clay Stick",
+      "en": "Mughwort Clay Stick"
+    },
+    "description": {
+      "id": "Membantu merawat dan menenangkan kulit berjerawat.",
+      "en": "Treating acne-prone skin."
+    },
     "price": 43000,
     "image": "/Assets/img/products/(19Glad2Glow Mugwort Clay Mask Masker Wajah _ Shopee Indonesia.png"
   },
   {
     "id": 20,
-    "name": "Niacinamide Micellar Water ",
-    "description": "Cleanses the face from excess oil, dirt, and even waterproof makeup without feeling sticky.",
+    "name": {
+      "id": "Niacinamide Micellar Water",
+      "en": "Niacinamide Micellar Water"
+    },
+    "description": {
+      "id": "Membersihkan wajah dari minyak, kotoran, dan makeup waterproof tanpa rasa lengket.",
+      "en": "Cleanses the face from excess oil, dirt, and even waterproof makeup without feeling sticky."
+    },
     "price": 43000,
     "image": "/Assets/img/products/(20) micwllar water brightening.png"
   },
   {
     "id": 21,
-    "name": "Centella Micelar Water",
-    "description": "helps treat acne-prone skin and prevents acne growth due to makeup, excess oil, and dirt..",
+    "name": {
+      "id": "Centella Micellar Water",
+      "en": "Centella Micelar Water"
+    },
+    "description": {
+      "id": "Membantu merawat kulit berjerawat dan mencegah timbulnya jerawat akibat minyak dan kotoran.",
+      "en": "Helps treat acne-prone skin and prevents acne growth due to makeup, excess oil, and dirt."
+    },
     "price": 43000,
     "image": "/Assets/img/products/(21)micellar water centella.png"
   }
