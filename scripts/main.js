@@ -7,10 +7,16 @@ const cardList = document.querySelector(".card-list");
 const checkoutButton = document.querySelector(".checkout-btn");
 const homeCardContainerHTML = document.querySelector(".card-container");
 const searchInput = document.querySelector("#searchProduct");
+const paginationContainer = document.querySelector(".pagination");
+const prev = document.getElementById("prev");
+const next = document.getElementById("next");
 
 let listProducts = [];
 let listCartProducts = [];
 const listHomeProducts = [4, 3, 11, 8];
+let currentPage = 1;
+let currentProducts = [];
+const ITEMS_PER_PAGE = 12;
 
 cartButton?.addEventListener("click", () => {
     cartTab.classList.add("active");
@@ -23,14 +29,24 @@ closeButton?.addEventListener("click", () => {
 searchInput?.addEventListener("input", (e) => {
     const keyword = e.target.value.toLowerCase();
 
-    const filteredProducts = listProducts.filter(product =>
+    const filtered = listProducts.filter(product =>
         product.name.toLowerCase().includes(keyword)
     );
 
-    renderFilteredProducts(filteredProducts);
+    paginateProducts(filtered, 1);
 });
 
+const paginateProducts = (products, page = 1) => {
+    currentPage = page;
+    currentProducts = products;
 
+    const start = (page - 1) * ITEMS_PER_PAGE;
+    const end = start + ITEMS_PER_PAGE;
+
+    const paginatedData = products.slice(start, end);
+    renderFilteredProducts(paginatedData);
+    renderPagination(products.length);
+};
 
 checkoutButton?.addEventListener("click", () => {
     if (listCartProducts.length === 0) {
@@ -132,32 +148,72 @@ const renderFilteredProducts = (products) => {
     });
 };
 
-
-
-const addDataToHTML = () => {
-    if (!listProductsHTML) return;
-
-    listProductsHTML.innerHTML = "";
-    listProducts.forEach(product => {
-        const card = document.createElement("div");
-        card.className = "product-card";
-        card.dataset.id = product.id;
-
-        card.innerHTML = `
-            <img src="${product.image}" alt="${product.name}">
-            <h3>${product.name}</h3>
-            <p>${product.description}</p>
-            <div class="bottom-card">
-                <span>Rp. ${product.price}</span>
-                <button class="product-btn">
-                    <i class="fa-solid fa-basket-shopping"></i>
-                </button>
-            </div>
-        `;
-
-        listProductsHTML.appendChild(card);
-    });
+const createDots = () => {
+    const span = document.createElement("span");
+    span.textContent = "...";
+    span.style.padding = "6px 10px";
+    return span;
 };
+
+const renderPagination = (totalItems) => {
+    if (!paginationContainer) return;
+
+    paginationContainer.innerHTML = "";
+
+    const totalPages = Math.ceil(totalItems / ITEMS_PER_PAGE);
+    if (totalPages <= 1) return;
+
+    /* ===== PREV ===== */
+    const prevBtn = document.createElement("button");
+    prevBtn.innerHTML = "<i class='fa-solid fa-arrow-left'></i>";
+    prevBtn.disabled = currentPage === 1;
+
+    prevBtn.addEventListener("click", () => {
+        paginateProducts(currentProducts, currentPage - 1);
+    });
+
+    paginationContainer.appendChild(prevBtn);
+
+    /* ===== PAGE RANGE ===== */
+    let startPage = Math.max(1, currentPage - 1);
+    let endPage = Math.min(totalPages, currentPage + 1);
+
+    // pastikan selalu max 3 angka
+    if (currentPage === 1) endPage = 2;
+    if (currentPage === totalPages) startPage = totalPages - 1;
+
+    if (startPage > 1) {
+        paginationContainer.appendChild(createDots());
+    }
+
+    for (let i = startPage; i <= endPage; i++) {
+        const btn = document.createElement("button");
+        btn.textContent = i;
+        btn.className = i === currentPage ? "active" : "";
+
+        btn.addEventListener("click", () => {
+            paginateProducts(currentProducts, i);
+        });
+
+        paginationContainer.appendChild(btn);
+    }
+
+    if (endPage < totalPages) {
+        paginationContainer.appendChild(createDots());
+    }
+
+    /* ===== NEXT ===== */
+    const nextBtn = document.createElement("button");
+    nextBtn.innerHTML = "<i class='fa-solid fa-arrow-right'></i>";
+    nextBtn.disabled = currentPage === totalPages;
+
+    nextBtn.addEventListener("click", () => {
+        paginateProducts(currentProducts, currentPage + 1);
+    });
+
+    paginationContainer.appendChild(nextBtn);
+};
+
 
 const addToCart = (productId) => {
     const index = listCartProducts.findIndex(item => item.productId == productId);
@@ -283,7 +339,7 @@ const initData = () => {
         .then(res => res.json())
         .then(data => {
             listProducts = data;
-            addDataToHTML();
+            paginateProducts(listProducts, 1);
 
             if (homeCardContainerHTML) {
                 const homeProducts = listProducts.filter(product =>

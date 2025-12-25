@@ -164,26 +164,32 @@
 }
 
 /* PAGINATION */
-.product-pagination {
-    margin-top: 50px;
+.pagination {
     display: flex;
+    gap: 8px;
     justify-content: center;
-    gap: 10px;
+    margin-top: 30px;
 }
 
-.product-pagination button {
-    width: 38px;
-    height: 38px;
+.pagination button {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #ccc;
     border-radius: 50%;
-    border: none;
-    background-color: #eee;
+    background: white;
     cursor: pointer;
 }
 
-.product-pagination button.active {
-    background-color: var(--color-primary);
-    color: #fff;
+.pagination button.active {
+    background: #7A4A4A;
+    color: white;
 }
+
+.pagination button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
