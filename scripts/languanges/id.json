@@ -1,0 +1,148 @@
+{
+    "meta": {
+        "titleHome": "Skincare | Beranda",
+        "titleProduct": "Skincare | Produk",
+        "titleAbout": "Skincare | Tentang",
+        "titleContact": "Skincare | Kontak"
+    },
+    "navbar": {
+        "home": "Beranda",
+        "product": "Produk",
+        "about": "Tentang",
+        "contact": "Kontak"
+    },
+    "cart": {
+        "title": "Keranjang Belanja",
+        "checkout": "Checkout",
+        "empty": "Keranjang belanja kamu masih kosong"
+    },
+    "product": {
+        "header": {
+            "title": "Produk Kami",
+            "description": "Produk perawatan kulit yang dibuat dengan cermat untuk kulit sehat dan bercahaya."
+        },
+        "search": {
+            "placeholder": "Cari produk..."
+        }
+    },
+    "hero": {
+        "title": "Passion & Love untuk Kecantikan Alami",
+        "description": "Temukan perawatan kulit yang dirancang untuk menjaga keseimbangan alami kulitmu. Diformulasikan dengan bahan efektif untuk membantu melembapkan, memperbarui, dan menjaga kesehatan kulit—menjadikan rutinitas skincare lebih sederhana dan nyaman.",
+        "cta": "Beli Sekarang"
+    },
+    "catalog": {
+        "title": "Produk Terlaris",
+        "cta": "Lihat Produk"
+    },
+    "homeAbout": {
+        "label": "sedikit",
+        "title": "Tentang Kami",
+        "description": "Kami percaya bahwa kulit sehat dimulai dari perawatan yang sederhana dan penuh perhatian. Produk kami diformulasikan dengan bahan pilihan untuk menjaga keseimbangan alami kulit, memberikan hasil yang efektif tanpa kerumitan yang tidak perlu. Kami fokus menciptakan skincare yang nyaman, dapat diandalkan, dan mudah digunakan setiap hari.",
+        "cta": "Jelajahi"
+    },
+    "about": {
+        "header": {
+            "title": "Tentang Kami",
+            "subtitle": "Berdedikasi pada perawatan kulit alami dan kepercayaan diri yang sehat."
+        },
+        "section1": {
+            "title": "Siapa Kami",
+            "content": "Kami adalah brand skincare yang berfokus menghadirkan produk perawatan kulit alami, berkualitas tinggi, dan efektif untuk kebutuhan sehari-hari."
+        },
+        "section2": {
+            "title": "Misi Kami",
+            "content": "Misi kami adalah membantu semua orang mendapatkan kulit yang sehat dan bercahaya melalui produk skincare yang aman, alami, dan dibuat secara bertanggung jawab."
+        },
+        "section3": {
+            "title": "Visi Kami",
+            "content": "Menjadi brand skincare terpercaya yang mendukung perawatan diri, kepercayaan diri, dan keberlanjutan."
+        },
+        "values": {
+            "title": "Nilai Kami",
+            "items": [
+                "Bahan Alami",
+                "Keamanan & Kualitas Kulit",
+                "Keberlanjutan",
+                "Kepercayaan Pelanggan"
+            ]
+        }
+    },
+    "partnership": {
+        "title": "Partner Kami"
+    },
+    "homeContact": {
+        "label": "KONTAK",
+        "title": "Mari Bekerja Sama",
+        "description": "Kami terbuka untuk peluang baru, kerja sama, dan diskusi proyek. Jika kamu mencari tim yang dapat dipercaya untuk berkolaborasi atau ingin menjajaki kemungkinan kerja sama, jangan ragu untuk menghubungi kami. Kami percaya proyek yang sukses dibangun melalui kepercayaan, komunikasi, dan visi yang sama.",
+        "cta": "Hubungi Kami"
+    },
+    "contact": {
+        "hero": {
+            "title": "Hubungi Kami",
+            "subtitle": "Punya pertanyaan tentang produk kami atau butuh bantuan memilih skincare yang tepat? Kami siap membantu."
+        },
+        "info": {
+            "phone": {
+                "label": "Telepon",
+                "value": "+62 812 3456 7890"
+            },
+            "whatsapp": {
+                "label": "WhatsApp",
+                "value": "+62 812 3456 7890"
+            },
+            "email": {
+                "label": "Email",
+                "value": "support@yourbrand.com"
+            },
+            "location": {
+                "label": "Toko Kami",
+                "value": "Yogyakarta, Indonesia"
+            }
+        },
+        "form": {
+            "title": "Hubungi Kami",
+            "description": "Isi formulir di bawah ini dan tim kami akan menghubungi kamu secepat mungkin.",
+            "placeholder": {
+                "name": "Nama Kamu",
+                "email": "Alamat Email",
+                "subject": "Subjek",
+                "message": "Pesan"
+            },
+            "button": "Kirim Pesan"
+        }
+    },
+    "footer": {
+        "brandText": "Rawat Kulitmu – Alami, Setiap Hari.",
+        "newsletter": {
+            "title": "Tetap Terhubung!",
+            "placeholder": "Masukkan email kamu",
+            "button": "Berlangganan"
+        },
+        "contactInfo": {
+            "title": "Informasi Kontak",
+            "email": "neatural.group1@gmail.com",
+            "phone": "1800-2322-8686"
+        },
+        "company": {
+            "title": "Perusahaan",
+            "home": "Beranda",
+            "about": "Tentang Kami",
+            "contact": "Kontak",
+            "product": "Produk"
+        },
+        "help": {
+            "title": "Bantuan",
+            "faq": "FAQ",
+            "helpCenter": "Pusat Bantuan",
+            "support": "Dukungan"
+        },
+        "follow": {
+            "title": "Ikuti Kami"
+        },
+        "copyright": "© 2025 Neatural. Seluruh Hak Dilindungi.",
+        "policy": {
+            "privacy": "Privasi",
+            "terms": "Syarat & Ketentuan"
+        }
+    }
+}
