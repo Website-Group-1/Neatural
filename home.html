@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Skincare | Home</title>
+
+  <title data-i18n="meta.titleHome"></title>
 
   <link rel="stylesheet" href="/Assets/styles/style.css" />
   <link rel="stylesheet" href="Assets/styles/components/navbar.css">
@@ -14,25 +15,34 @@
 </head>
 
 <body>
+
   <!-- NAVBAR -->
   <nav>
     <div class="navbar">
-      <span class="logo"><a href="home.html"><img src="Assets/img/logo-website.png" alt="logo-website"></a></span>
+      <span class="logo">
+        <a href="home.html">
+          <img src="Assets/img/logo-website.png" alt="logo-website">
+        </a>
+      </span>
 
       <div class="menu">
         <ul class="nav-links">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="pages/product.html">Product</a></li>
-          <li><a href="pages/about.html">About</a></li>
-          <li><a href="pages/contact.html">Contact</a></li>
+          <li><a href="home.html" data-i18n="navbar.home"></a></li>
+          <li><a href="pages/product.html" data-i18n="navbar.product"></a></li>
+          <li><a href="pages/about.html" data-i18n="navbar.about"></a></li>
+          <li><a href="pages/contact.html" data-i18n="navbar.contact"></a></li>
         </ul>
       </div>
 
       <div class="utils">
         <div class="cart-icon">
-          <button class="utils-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+          <button class="utils-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
           <span class="totalCart">0</span>
         </div>
+
+        <!-- Language Toggle -->
         <div class="lang-toggle">
           <span class="lang-label">EN</span>
           <label class="switch">
@@ -45,193 +55,192 @@
     </div>
   </nav>
 
-  <!-- Cart Tab -->
+  <!-- CART TAB -->
   <div class="cart-tab">
     <div class="header-cart">
-      <h2>Shopping Cart</h2>
+      <h2 data-i18n="cart.title"></h2>
       <hr>
     </div>
+
     <div class="card-list"></div>
+
     <div class="cart-tab-btn">
-      <button class="close-btn"><i class="fa-solid fa-x"></i></button>
-      <button class="checkout-btn">Checkout</button>
+      <button class="close-btn">
+        <i class="fa-solid fa-x"></i>
+      </button>
+      <button class="checkout-btn" data-i18n="cart.checkout"></button>
     </div>
   </div>
 
-  <!-- Hero Section -->
+  <!-- HERO -->
   <section id="hero" class="hero">
     <div class="container-hero">
-      <h2>Passion & Love for <br />Natural Beauty</h2>
-      <p>
-        Discover skincare designed to support your skin’s natural balance. Thoughtfully formulated with effective
-        ingredients, our products help hydrate, renew, and maintain healthy-looking skin—making everyday skincare simple
-        and comfortable.
-      </p>
+      <h2 data-i18n="hero.title"></h2>
+      <p data-i18n="hero.description"></p>
+
       <div class="hero-btn">
-        <a href="pages/product.html" class="cta-btn">Buy Now</a>
+        <a href="pages/product.html" class="cta-btn" data-i18n="hero.cta"></a>
       </div>
+
       <div class="container-picture">
-        <img src="Assets/img/015878300_1706188978-G2G_0230_ganti_BG_revisi1.webp" alt="" />
-        <img src="Assets/img/2.jpg" alt="" />
-        <img src="Assets/img/3.jpg" alt="" />
-        <img src="Assets/img/4.jpg" alt="" />
+        <img src="Assets/img/015878300_1706188978-G2G_0230_ganti_BG_revisi1.webp" alt="">
+        <img src="Assets/img/2.jpg" alt="">
+        <img src="Assets/img/3.jpg" alt="">
+        <img src="Assets/img/4.jpg" alt="">
       </div>
     </div>
   </section>
 
-  <!-- Catalog Product Section -->
+  <!-- CATALOG -->
   <section class="catalog-product">
     <div class="container-product">
-      <h2>Bestsellers Product</h2>
-      <div class="card-container">
+      <h2 data-i18n="catalog.title"></h2>
 
-      </div>
+      <div class="card-container"></div>
+
       <div class="product-cta">
-        <a href="pages/product.html" class="cta-btn">View Product</a>
+        <a href="pages/product.html" class="cta-btn" data-i18n="catalog.cta"></a>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- ABOUT -->
   <section id="about">
     <div class="container-about">
+
       <div class="left-side">
         <div class="img-card first">
-          <img src="Assets/img/KV_G2G-23_2000_0c5d7a1c-d07e-495c-a121-1e1143faa85d.webp" alt="about-img1">
+          <img src="Assets/img/KV_G2G-23_2000_0c5d7a1c-d07e-495c-a121-1e1143faa85d.webp" alt="">
         </div>
         <div class="img-card second">
-          <img src="Assets/img/WhatsApp Image 2025-10-22 at 11.19.55_db42ad7b.jpg" alt="about-img1">
+          <img src="Assets/img/WhatsApp Image 2025-10-22 at 11.19.55_db42ad7b.jpg" alt="">
         </div>
       </div>
+
       <div class="right-side">
         <div class="about-heading">
-          <p class="top-text">a bit</p>
-          <h1>About Us</h1>
+          <p class="top-text" data-i18n="homeAbout.label"></p>
+          <h1 data-i18n="homeAbout.title"></h1>
         </div>
-        <p>We believe that healthy skin starts with simple and thoughtful care. Our products are formulated with
-          carefully selected ingredients to support your skin’s natural balance, delivering effective results without
-          unnecessary complexity. We focus on creating skincare that feels comfortable, reliable, and easy to
-          incorporate into your daily routine.</p>
+
+        <p data-i18n="homeAbout.description"></p>
+
         <div class="about-cta">
-          <a class="cta-btn" href="pages/about.html">Explore</a>
+          <a class="cta-btn" href="pages/about.html" data-i18n="homeAbout.cta"></a>
         </div>
       </div>
+
     </div>
   </section>
 
-  <!-- Partnership Section -->
+  <!-- PARTNERSHIP -->
   <section class="container-partnership">
     <div class="header-partnership">
-      <h1>Our Partnership</h1>
+      <h1 data-i18n="partnership.title"></h1>
     </div>
+
     <div class="carousel">
       <div class="group">
-        <div class="card"><img src="Assets/img/logoipsum-398.svg" alt="logo"></div>
-        <div class="card"><img src="Assets/img/logoipsum-400.svg" alt="logo"></div>
-        <div class="card"><img src="Assets/img/logoipsum-414.svg" alt="logo"></div>
-        <div class="card"><img src="Assets/img/logoipsum-398.svg" alt="logo"></div>
-        <div class="card"><img src="Assets/img/logoipsum-400.svg" alt="logo"></div>
-        <div class="card"><img src="Assets/img/logoipsum-414.svg" alt="logo"></div>
+        <div class="card"><img src="Assets/img/logoipsum-398.svg"></div>
+        <div class="card"><img src="Assets/img/logoipsum-400.svg"></div>
+        <div class="card"><img src="Assets/img/logoipsum-414.svg"></div>
       </div>
       <div aria-hidden="true" class="group">
-        <div class="card"><img src="Assets/img/logoipsum-398.svg" alt="logo"></div>
-        <div class="card"><img src="Assets/img/logoipsum-400.svg" alt="logo"></div>
-        <div class="card"><img src="Assets/img/logoipsum-414.svg" alt="logo"></div>
-        <div class="card"><img src="Assets/img/logoipsum-398.svg" alt="logo"></div>
-        <div class="card"><img src="Assets/img/logoipsum-400.svg" alt="logo"></div>
-        <div class="card"><img src="Assets/img/logoipsum-414.svg" alt="logo"></div>
+        <div class="card"><img src="Assets/img/logoipsum-398.svg"></div>
+        <div class="card"><img src="Assets/img/logoipsum-400.svg"></div>
+        <div class="card"><img src="Assets/img/logoipsum-414.svg"></div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- CONTACT -->
   <section class="contact-section">
     <div class="contact-container">
-      <!-- LEFT -->
+
       <div class="contact-text">
-        <span class="label">CONTACT</span>
-        <h2>Let’s Work Together</h2>
-        <p>
-          We are open to new opportunities, partnerships, and project discussions. If you are looking for a reliable
-          team to collaborate with or would like to explore how we can work together, feel free to reach out. We believe
-          that successful projects are built through trust, communication, and a shared vision.
-        </p>
-        <a href="pages/contact.html" class="cta-btn">Contacts Us</a>
+        <span class="label" data-i18n="homeContact.label"></span>
+        <h2 data-i18n="homeContact.title"></h2>
+        <p data-i18n="homeContact.description"></p>
+        <a href="pages/contact.html" class="cta-btn" data-i18n="homeContact.cta"></a>
       </div>
 
-      <!-- RIGHT -->
       <div class="contact-image">
         <div class="cover-img">
-          <img src="Assets/img/company-building.jpg" alt="company-img">
+          <img src="Assets/img/company-building.jpg">
         </div>
       </div>
+
     </div>
   </section>
 
-  <!-- Footer Section -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-container">
-      <!-- TOP -->
+
       <div class="footer-top">
-        <!-- BRAND / CTA -->
         <div class="footer-brand">
-          <img src="Assets/img/logo-website.png" alt="logo-website">
-          <h3>Care For Your Skin –<br> Naturally, Every Day.</h3>
+          <img src="Assets/img/logo-website.png">
+          <h3 data-i18n="footer.brandText"></h3>
         </div>
-        <!-- NEWSLETTER -->
+
         <div class="footer-newsletter">
-          <span>Get In Touch!</span>
+          <span data-i18n="footer.newsletter.title"></span>
           <div class="newsletter-input">
-            <input type="email" placeholder="Enter your email">
-            <button>Subscribe</button>
+            <input type="email" data-i18n-placeholder="footer.newsletter.placeholder">
+            <button data-i18n="footer.newsletter.button"></button>
           </div>
         </div>
       </div>
 
-      <!-- LINKS -->
       <div class="footer-links">
         <div class="footer-col">
-          <h4>Contact Information</h4>
-          <p>neatural.group1@gmail.com</p>
-          <p>1800-2322-8686</p>
+          <h4 data-i18n="footer.contactInfo.title"></h4>
+          <p data-i18n="footer.contactInfo.email"></p>
+          <p data-i18n="footer.contactInfo.phone"></p>
         </div>
+
         <div class="footer-col">
-          <h4>Company</h4>
-          <a href="home.html">Home</a>
-          <a href="pages/about.html">About Us</a>
-          <a href="pages/contact.html">Contact</a>
-          <a href="pages/product.html">Product</a>
+          <h4 data-i18n="footer.company.title"></h4>
+          <a data-i18n="footer.company.home"></a>
+          <a data-i18n="footer.company.about"></a>
+          <a data-i18n="footer.company.contact"></a>
+          <a data-i18n="footer.company.product"></a>
         </div>
+
         <div class="footer-col">
-          <h4>Help</h4>
-          <a href="pages/components/faq.html">FAQ</a>
-          <a href="pages/components/help_center.html">Help Center</a>
-          <a href="pages/components/support.html">Support</a>
+          <h4 data-i18n="footer.help.title"></h4>
+          <a data-i18n="footer.help.faq"></a>
+          <a data-i18n="footer.help.helpCenter"></a>
+          <a data-i18n="footer.help.support"></a>
         </div>
+
         <div class="footer-col">
-          <h4>Follow Us</h4>
+          <h4 data-i18n="footer.follow.title"></h4>
           <div class="socials">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a><i class="fa-brands fa-facebook"></i></a>
+            <a><i class="fa-brands fa-instagram"></i></a>
+            <a><i class="fa-brands fa-github"></i></a>
           </div>
         </div>
       </div>
 
-      <!-- BOTTOM -->
       <div class="footer-bottom">
-        <p>© 2025 Neatural. All Rights Reserved.</p>
+        <p data-i18n="footer.copyright"></p>
         <div class="footer-policy">
-          <a href="pages/components/privacy.html">Privacy</a>
-          <a href="pages/components/terms_condition.html">Terms & Condition</a>
+          <a data-i18n="footer.policy.privacy"></a>
+          <a data-i18n="footer.policy.terms"></a>
         </div>
       </div>
+
     </div>
   </footer>
 
-  <script src="https://kit.fontawesome.com/ebb2aa59d3.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/ebb2aa59d3.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="scripts/main.js"></script>
-</body>
 
+<<<<<<< HEAD
+=======
+</body>
+>>>>>>> 404e2c5 (update languange feature)
 </html>
