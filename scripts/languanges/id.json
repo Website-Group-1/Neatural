@@ -83,19 +83,19 @@
         },
         "info": {
             "phone": {
-                "label": "Telepon",
+                "title": "Telepon",
                 "value": "+62 812 3456 7890"
             },
             "whatsapp": {
-                "label": "WhatsApp",
+                "title": "WhatsApp",
                 "value": "+62 812 3456 7890"
             },
             "email": {
-                "label": "Email",
+                "title": "Email",
                 "value": "support@yourbrand.com"
             },
             "location": {
-                "label": "Toko Kami",
+                "title": "Toko Kami",
                 "value": "Yogyakarta, Indonesia"
             }
         },

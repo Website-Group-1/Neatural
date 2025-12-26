@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+
+    <title data-i18n="meta.titleAbout">About</title>
 
     <link rel="stylesheet" href="../Assets/styles/about.css" />
     <link rel="stylesheet" href="../Assets/styles/components/navbar.css">
@@ -14,18 +15,22 @@
 </head>
 
 <body>
+
     <!-- NAVBAR -->
     <nav>
         <div class="navbar">
-            <span class="logo"><a href="../../home.html"><img src="../Assets/img/logo-website.png"
-                        alt="logo-website"></a></span>
+            <span class="logo">
+                <a href="../../home.html">
+                    <img src="../Assets/img/logo-website.png" alt="logo-website">
+                </a>
+            </span>
 
             <div class="menu">
                 <ul class="nav-links">
-                    <li><a href="../home.html">Home</a></li>
-                    <li><a href="product.html">Product</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="../home.html" data-i18n="navbar.home"></a></li>
+                    <li><a href="product.html" data-i18n="navbar.product"></a></li>
+                    <li><a href="about.html" data-i18n="navbar.about"></a></li>
+                    <li><a href="contact.html" data-i18n="navbar.contact"></a></li>
                 </ul>
             </div>
 
@@ -34,6 +39,7 @@
                     <button class="utils-btn"><i class="fa-solid fa-cart-shopping"></i></button>
                     <span class="totalCart">0</span>
                 </div>
+
                 <div class="lang-toggle">
                     <span class="lang-label">EN</span>
                     <label class="switch">
@@ -46,47 +52,32 @@
         </div>
     </nav>
 
-    <!-- Cart Tab -->
+    <!-- CART TAB -->
     <div class="cart-tab">
         <div class="header-cart">
-            <h2>Shopping Cart</h2>
+            <h2 data-i18n="cart.title"></h2>
             <hr>
         </div>
 
-        <!-- Card List -->
-        <div class="card-list">
-
-        </div>
+        <div class="card-list"></div>
 
         <div class="cart-tab-btn">
             <button class="close-btn"><i class="fa-solid fa-x"></i></button>
-            <button class="checkout-btn">Checkout</button>
+            <button class="checkout-btn" data-i18n="cart.checkout"></button>
         </div>
     </div>
 
     <!-- ABOUT HERO -->
     <section class="about-hero">
-        <h1>Our Passion for Thoughtful Skincare</h1>
-        <p>
-            We believe skincare should feel simple, comfortable, and effective.
-            Our journey began with a focus on supporting the skin’s natural balance
-            through gentle and thoughtfully formulated products.
-        </p>
+        <h1 data-i18n="about.header.title"></h1>
+        <p data-i18n="about.header.subtitle"></p>
     </section>
 
     <!-- BRAND STORY -->
     <section class="about-story">
         <div class="story-text">
-            <h2>Rooted in Simplicity</h2>
-            <p>
-                Foundational Simplicity
-                Our brand is built on the idea that skincare doesn't have to be complicated.
-                By focusing on essential ingredients and gentle formulations, we help you start your skincare journey
-                safely and comfortably.
-                Our products are specifically designed for young skin with lightweight, hassle-free formulas that are
-                safe for daily use.
-                We want skincare to be fun and accessible to everyone.
-            </p>
+            <h2 data-i18n="about.section1.title"></h2>
+            <p data-i18n="about.section1.content"></p>
         </div>
 
         <div class="story-image">
@@ -97,30 +88,22 @@
     <!-- VALUES -->
     <section class="about-values">
         <div class="value-card">
-            <h3>Gentle Formulation</h3>
-            <p>
-                Carefully developed formulas designed to respect your skin’s natural balance.
-            </p>
+            <h3 data-i18n="about.values.items.0"></h3>
         </div>
 
         <div class="value-card">
-            <h3>Thoughtful Ingredients</h3>
-            <p>
-                Each ingredient is selected with purpose, focusing on comfort and effectiveness.
-            </p>
+            <h3 data-i18n="about.values.items.1"></h3>
         </div>
 
         <div class="value-card">
-            <h3>Everyday Comfort</h3>
-            <p>
-                Skincare that fits seamlessly into your daily routine.
-            </p>
+            <h3 data-i18n="about.values.items.2"></h3>
         </div>
+
     </section>
 
     <!-- IMAGE HIGHLIGHT -->
     <section class="about-highlight">
-        <h2>Designed for Skin That Deserves Care</h2>
+        <h2 data-i18n="about.section2.title"></h2>
     </section>
 
     <!-- COMMITMENT -->
@@ -130,91 +113,76 @@
         </div>
 
         <div class="commitment-text">
-            <h2>Our Commitment</h2>
-            <p>
-                Our Commitment
-                We are committed to providing high-quality skincare with safe and effective formulas.
-                Every detail is carefully considered to ensure our products are safe and high-quality.
-                They are developed through in-depth research and using carefully selected, dermatologically tested
-                ingredients.
-                We believe that healthy skin is the foundation of self-confidence, and we are here to accompany you on
-                every step of your skincare journey.
-            </p>
+            <h2 data-i18n="about.section3.title"></h2>
+            <p data-i18n="about.section3.content"></p>
         </div>
     </section>
 
     <!-- CTA -->
     <section class="about-cta">
-        <h2>Discover Skincare Designed for Everyday Comfort</h2>
-        <a href="/pages/product.html" class="cta-btn">Explore Our Products</a>
+        <h2 data-i18n="catalog.title"></h2>
+        <a href="/pages/product.html" class="cta-btn" data-i18n="catalog.cta"></a>
     </section>
 
-    <!-- Footer Section -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-container">
 
-            <!-- TOP -->
             <div class="footer-top">
-
-                <!-- BRAND / CTA -->
                 <div class="footer-brand">
-                    <img src="../Assets/img/logo-website.png" alt="logo-website">
-                    <h3>Care For Your Skin –<br>
-                        Naturally, Every Day.</h3>
+                    <img src="../Assets/img/logo-website.png">
+                    <h3 data-i18n="footer.brandText"></h3>
                 </div>
 
-                <!-- NEWSLETTER -->
                 <div class="footer-newsletter">
-                    <span>Get In Touch!</span>
+                    <span data-i18n="footer.newsletter.title"></span>
                     <div class="newsletter-input">
-                        <input type="email" placeholder="Enter your email">
-                        <button>Subscribe</button>
+                        <input
+                            type="email"
+                            data-i18n-placeholder="footer.newsletter.placeholder"
+                        >
+                        <button data-i18n="footer.newsletter.button"></button>
                     </div>
                 </div>
-
             </div>
 
-            <!-- LINKS -->
             <div class="footer-links">
-
                 <div class="footer-col">
-                    <h4>Contact Information</h4>
-                    <p>neatural.group1@gmail.com</p>
-                    <p>1800-2322-8686</p>
+                    <h4 data-i18n="footer.contactInfo.title"></h4>
+                    <p data-i18n="footer.contactInfo.email"></p>
+                    <p data-i18n="footer.contactInfo.phone"></p>
                 </div>
 
                 <div class="footer-col">
-                    <h4>Company</h4>
-                    <a href="../../home.html">Home</a>
-                    <a href="/pages/about.html">About Us</a>
-                    <a href="/pages/contact.html">Contact</a>
-                    <a href="/pages/product.html">Product</a>
+                    <h4 data-i18n="footer.company.title"></h4>
+                    <a data-i18n="footer.company.home"></a>
+                    <a data-i18n="footer.company.about"></a>
+                    <a data-i18n="footer.company.contact"></a>
+                    <a data-i18n="footer.company.product"></a>
                 </div>
 
                 <div class="footer-col">
-                    <h4>Help</h4>
-                    <a href="/pages/components/faq.html">FAQ</a>
-                    <a href="/pages/components/help_center.html">Help Center</a>
-                    <a href="/pages/components/support.html">Support</a>
+                    <h4 data-i18n="footer.help.title"></h4>
+                    <a data-i18n="footer.help.faq"></a>
+                    <a data-i18n="footer.help.helpCenter"></a>
+                    <a data-i18n="footer.help.support"></a>
                 </div>
 
                 <div class="footer-col">
-                    <h4>Follow Us</h4>
+                    <h4 data-i18n="footer.follow.title"></h4>
                     <div class="socials">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a><i class="fa-brands fa-facebook"></i></a>
+                        <a><i class="fa-brands fa-instagram"></i></a>
+                        <a><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
-
             </div>
 
-            <!-- BOTTOM -->
             <div class="footer-bottom">
-                <p>© 2025 Neatural. All Rights Reserved.</p>
+                <p data-i18n="footer.copyright"></p>
                 <div class="footer-policy">
-                    <a href="/pages/components/privacy.html">Privacy</a>
-                    <a href="/pages/components/terms_condition.html">Terms & Condition</a>
+                    <a data-i18n="footer.policy.privacy"></a>
+                    <a data-i18n="footer.policy.terms"></a>
                 </div>
             </div>
 
@@ -222,8 +190,8 @@
     </footer>
 
     <script src="../scripts/main.js"></script>
-    <script src="https://kit.fontawesome.com/ebb2aa59d3.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ebb2aa59d3.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-</body>
 
+</body>
 </html>

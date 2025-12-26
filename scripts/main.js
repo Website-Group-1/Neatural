@@ -9,11 +9,10 @@ const homeCardContainerHTML = document.querySelector(".card-container");
 const searchInput = document.getElementById("searchProduct");
 const paginationContainer = document.querySelector(".pagination");
 const langToggle = document.getElementById("langToggle");
-const prev = document.getElementById("prev");
-const next = document.getElementById("next");
 
 let listProducts = [];
 let listCartProducts = [];
+let langData = {};
 const listHomeProducts = [4, 3, 11, 8];
 let currentPage = 1;
 let currentProducts = [];
@@ -21,22 +20,62 @@ const ITEMS_PER_PAGE = 12;
 let currentLang = localStorage.getItem("lang") || "en";
 
 const loadLanguage = async (lang) => {
-    const res = await fetch(`/lang/${lang}.json`);
-    langData = await res.json();
-    applyLanguage();
-    localStorage.setItem("lang", lang);
+    try {
+        const res = await fetch(`/scripts/languanges/${lang}.json`);
+        langData = await res.json();
+        
+        // Pastikan toggle sesuai dengan bahasa yang sedang diload
+        if (langToggle) langToggle.checked = (lang === "id");
+        
+        applyLanguage();
+        localStorage.setItem("lang", lang);
+
+        // Re-render UI yang mengandung data produk
+        if (currentProducts.length > 0) {
+            paginateProducts(currentProducts, currentPage);
+        } else {
+            paginateProducts(listProducts, 1);
+        }
+
+        if (homeCardContainerHTML) {
+            const homeProducts = listProducts.filter(p => listHomeProducts.includes(p.id));
+            renderHomeProducts(homeProducts);
+        }
+
+        addToCartHTML();
+        updateTotalCart();
+    } catch (error) {
+        console.error("Gagal memuat bahasa:", error);
+    }
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-    if (currentLang === "id") {
-        langToggle.checked = true;
+const applyLanguage = () => {
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.dataset.i18n;
+        const value = getValue(langData, key);
+        if (value) el.textContent = value;
+    });
+
+    document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+        const key = el.dataset.i18nPlaceholder;
+        const value = getValue(langData, key);
+        if (value) el.placeholder = value;
+    });
+
+    // update title
+    const titleKey = document.querySelector("title")?.dataset.i18n;
+    if (titleKey) {
+        document.title = getValue(langData, titleKey);
     }
-    loadLanguage(currentLang);
-});
+};
+
+function getValue(obj, path) {
+    return path.split(".").reduce((o, k) => o?.[k], obj);
+}
 
 langToggle?.addEventListener("change", () => {
     currentLang = langToggle.checked ? "id" : "en";
-    loadLanguage(currentLang);
+    loadLanguage(currentLang)
 });
 
 cartButton?.addEventListener("click", () => {
@@ -51,7 +90,7 @@ searchInput?.addEventListener("input", (e) => {
     const keyword = e.target.value.toLowerCase();
 
     const filtered = listProducts.filter(product =>
-        product.name.toLowerCase().includes(keyword)
+        product.name[currentLang].toLowerCase().includes(keyword)
     );
 
     paginateProducts(filtered, 1);
@@ -105,15 +144,6 @@ const clearCart = () => {
     updateTotalCart();
 };
 
-const filterProductsByName = (keyword) => {
-    const filtered = listProducts.filter(product =>
-        product.name.toLowerCase().includes(keyword.toLowerCase())
-    );
-
-    renderFilteredProducts(filtered);
-};
-
-
 function renderHomeProducts(products) {
     homeCardContainerHTML.innerHTML = "";
 
@@ -123,9 +153,9 @@ function renderHomeProducts(products) {
         card.dataset.id = product.id;
 
         card.innerHTML = `
-            <img src="${product.image}" alt="${product.name}">
-            <h3>${product.name}</h3>
-            <p>${product.description}</p>
+            <img src="${product.image}" alt="${product.name[currentLang]}">
+            <h3>${product.name[currentLang]}</h3>
+            <p>${product.description[currentLang]}</p>
             <div class="bottom-card">
                 <span>Rp. ${product.price.toLocaleString("id-ID")}</span>
                 <button class="product-btn">
@@ -154,9 +184,9 @@ const renderFilteredProducts = (products) => {
         card.dataset.id = product.id;
 
         card.innerHTML = `
-            <img src="${product.image}" alt="${product.name}">
-            <h3>${product.name}</h3>
-            <p>${product.description}</p>
+            <img src="${product.image}" alt="${product.name[currentLang]}">
+            <h3>${product.name[currentLang]}</h3>
+            <p>${product.description[currentLang]}</p>
             <div class="bottom-card">
                 <span>Rp. ${product.price.toLocaleString("id-ID")}</span>
                 <button class="product-btn">
@@ -275,7 +305,7 @@ const addToCartHTML = () => {
             <div class="card-image">
                 <img src="${product.image}">
             </div>
-            <div class="name">${product.name}</div>
+            <div class="name">${product.name[currentLang]}</div>
             <div class="totalPrice">Rp. ${product.price * cart.quantity}</div>
             <div class="quantity">
                 <span class="minus"><i class="fa-solid fa-minus"></i></span>
@@ -364,6 +394,8 @@ const initData = () => {
         .then(res => res.json())
         .then(data => {
             listProducts = data;
+
+            loadLanguage(currentLang);
             paginateProducts(listProducts, 1);
 
             if (homeCardContainerHTML) {
