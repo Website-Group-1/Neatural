@@ -87,19 +87,19 @@
         },
         "info": {
             "phone": {
-                "label": "Phone",
+                "title": "Phone",
                 "value": "+62 812 3456 7890"
             },
             "whatsapp": {
-                "label": "WhatsApp",
+                "title": "WhatsApp",
                 "value": "+62 812 3456 7890"
             },
             "email": {
-                "label": "Email",
+                "title": "Email",
                 "value": "support@yourbrand.com"
             },
             "location": {
-                "label": "Our Shop",
+                "title": "Our Shop",
                 "value": "Yogyakarta, Indonesia"
             }
         },
