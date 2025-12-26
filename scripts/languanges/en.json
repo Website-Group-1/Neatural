@@ -42,28 +42,32 @@
     },
     "about": {
         "header": {
-            "title": "About Us",
-            "subtitle": "Dedicated to natural skincare and healthy confidence."
+            "title": "Our Passion for Thoughtful Skincare",
+            "subtitle": "We believe skincare should feel simple, comfortable, and effective. Our journey began with a focus on supporting the skin’s natural balance through gentle and thoughtfully formulated products."
         },
         "section1": {
-            "title": "Who We Are",
-            "content": "We are a skincare brand focused on delivering high-quality, natural, and effective products for everyday skin care."
+            "title": "Rooted in Simplicity",
+            "content": "Foundational Simplicity Our brand is built on the idea that skincare doesn't have to be complicated. By focusing on essential ingredients and gentle formulations, we help you start your skincare journey safely and comfortably. Our products are specifically designed for young skin with lightweight, hassle-free formulas that are safe for daily use. We want skincare to be fun and accessible to everyone."
         },
         "section2": {
             "title": "Our Mission",
             "content": "Our mission is to help everyone achieve healthy and glowing skin through safe, natural, and responsibly crafted skincare products."
         },
         "section3": {
-            "title": "Our Vision",
-            "content": "To become a trusted skincare brand that promotes self-care, confidence, and sustainability."
+            "title": "Our Commitment",
+            "content": "Our Commitment We are committed to providing high-quality skincare with safe and effective formulas. Every detail is carefully considered to ensure our products are safe and high-quality. They are developed through in-depth research and using carefully selected, dermatologically tested ingredients. We believe that healthy skin is the foundation of self-confidence, and we are here to accompany you on every step of your skincare journey."
         },
         "values": {
             "title": "Our Values",
             "items": [
-                "Natural Ingredients",
-                "Skin Safety & Quality",
-                "Sustainability",
-                "Customer Trust"
+                "Gentle Formulation",
+                "Thoughtful Ingredients",
+                "Everyday Comfort"
+            ],
+            "content": [
+                "Carefully developed formulas designed to respect your skin’s natural balance.",
+                "Each ingredient is selected with purpose, focusing on comfort and effectiveness.",
+                "Skincare that fits seamlessly into your daily routine."
             ]
         }
     },
