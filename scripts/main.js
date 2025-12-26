@@ -9,6 +9,11 @@ const homeCardContainerHTML = document.querySelector(".card-container");
 const searchInput = document.getElementById("searchProduct");
 const paginationContainer = document.querySelector(".pagination");
 const langToggle = document.getElementById("langToggle");
+const menuCheckbox = document.getElementById('check');
+const navLinks = document.querySelectorAll('.nav-links li a');
+const menuContainer = document.querySelector('.menu');
+const bottomNavLinks = document.querySelectorAll('.nav-item');
+const currentPath = window.location.pathname;
 
 let listProducts = [];
 let listCartProducts = [];
@@ -23,10 +28,10 @@ const loadLanguage = async (lang) => {
     try {
         const res = await fetch(`/scripts/languanges/${lang}.json`);
         langData = await res.json();
-        
+
         // Pastikan toggle sesuai dengan bahasa yang sedang diload
         if (langToggle) langToggle.checked = (lang === "id");
-        
+
         applyLanguage();
         localStorage.setItem("lang", lang);
 
@@ -78,12 +83,34 @@ langToggle?.addEventListener("change", () => {
     loadLanguage(currentLang)
 });
 
+bottomNavLinks.forEach(link => {
+    // Jika path link sama dengan path URL saat ini
+    if (link.getAttribute('href').includes(currentPath)) {
+        link.classList.add('active');
+    }
+});
+
 cartButton?.addEventListener("click", () => {
     cartTab.classList.add("active");
 });
 
 closeButton?.addEventListener("click", () => {
     cartTab.classList.remove("active");
+});
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        menuCheckbox.checked = false; // Uncheck checkbox untuk menutup menu
+        document.body.style.overflow = 'auto'; // Kembalikan scroll body
+    });
+});
+
+menuCheckbox?.addEventListener('change', () => {
+    if (menuCheckbox.checked) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = 'auto';
+    }
 });
 
 searchInput?.addEventListener("input", (e) => {
@@ -107,6 +134,16 @@ const paginateProducts = (products, page = 1) => {
     renderFilteredProducts(paginatedData);
     renderPagination(products.length);
 };
+
+document.addEventListener('click', (event) => {
+    const isClickInsideMenu = menuContainer.contains(event.target);
+    const isClickOnHamburger = document.querySelector('.menu-btn').contains(event.target);
+
+    if (menuCheckbox.checked && !isClickInsideMenu && !isClickOnHamburger) {
+        menuCheckbox.checked = false;
+        document.body.style.overflow = 'auto';
+    }
+});
 
 checkoutButton?.addEventListener("click", () => {
     if (listCartProducts.length === 0) {
