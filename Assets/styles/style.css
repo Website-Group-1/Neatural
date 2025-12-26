@@ -418,7 +418,7 @@ body {
     display: flex;
     align-items: center;
     gap: 3rem;
-    animation: scroll 20s linear infinite;
+    animation: spin 20s linear infinite;
     padding-right: 3em;
     margin: 2em 0;
 }
@@ -451,11 +451,11 @@ body {
 }
 
 /* Animation */
-@keyframes scroll {
+@keyframes spin {
     from {
-        transform: translateX(0);
+        translate: 0;
     }
     to {
-        transform: translateX(-100%);
+        translate: -100%;
     }
 }

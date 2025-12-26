@@ -13,7 +13,7 @@
     },
     "cart": {
         "title": "Keranjang Belanja",
-        "checkout": "Checkout",
+        "checkout": "Proses Pembayaran",
         "empty": "Keranjang belanja kamu masih kosong"
     },
     "product": {
