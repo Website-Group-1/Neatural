@@ -203,3 +203,84 @@
 .footer-policy a:hover {
     color: white;
 }
+
+@media screen and (max-width: 600px) {
+    /* --- FOOTER RESPONSIVE --- */
+
+    .footer {
+        padding: 40px 15px 20px;
+    }
+
+    .footer-container {
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    /* Mengubah Top Footer menjadi kolom */
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+        /* Sejajarkan ke kiri */
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .footer-brand img {
+        height: 70px;
+        /* Perkecil logo di mobile */
+    }
+
+    .footer-brand h3 {
+        font-size: 22px;
+    }
+
+    /* Newsletter agar memenuhi lebar layar */
+    .footer-newsletter {
+        width: 100%;
+    }
+
+    .newsletter-input {
+        flex-direction: column;
+        /* Input dan tombol bertumpuk */
+        background: transparent;
+        padding: 0;
+        gap: 10px;
+    }
+
+    .newsletter-input input {
+        width: 100%;
+        background: var(--color-bg-light);
+        border-radius: var(--radius-sm);
+    }
+
+    .newsletter-input button {
+        width: 100%;
+        /* Tombol jadi lebar penuh agar mudah diklik jempol */
+        padding: 12px;
+    }
+
+    /* Mengubah grid 4 kolom menjadi 1 atau 2 kolom */
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 kolom agar tidak terlalu panjang kebawah */
+        gap: 30px 20px;
+    }
+
+    /* Bagian bawah footer (Copyright & Policy) */
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-policy {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer-policy a {
+        margin: 0 10px;
+    }
+}

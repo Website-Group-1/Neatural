@@ -455,8 +455,159 @@ body {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-100%);
     }
 }
 
+/* === RESPONSIVE STRATEGY FOR MOBILE (Layar < 600px) === */
+@media screen and (max-width: 600px) {
+
+    /* Global Adjustments */
+    body {
+        height: auto;
+        /* Biarkan konten menentukan tinggi body */
+    }
+
+    /* Hero Section */
+    .container-hero {
+        height: auto;
+        min-height: 80vh;
+        margin-top: 20%;
+        padding: 0 20px;
+    }
+
+    .container-hero h2 {
+        font-size: 32px;
+        /* Ukuran lebih masuk akal untuk mobile */
+    }
+
+    .container-hero p {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    /* Hero Picture - Mengatur agar gambar tidak terlalu berantakan */
+    .container-picture {
+        flex-wrap: wrap;
+        /* Agar gambar bisa turun ke bawah jika tidak cukup */
+        gap: 8px;
+        margin-top: 30px;
+    }
+
+    .container-picture img {
+        width: 45%;
+        /* Menampilkan 2 gambar per baris */
+        height: 150px !important;
+        /* Paksa tinggi seragam di mobile agar rapi */
+        margin-top: 0 !important;
+        /* Hapus margin offset desktop */
+    }
+
+    /* Product Section */
+    .container-product {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .container-product h2 {
+        font-size: 32px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        /* Kartu disusun vertikal */
+        padding: 2em 1em;
+        gap: 1.5em;
+    }
+
+    .product-card img {
+        height: 150px;
+    }
+
+    /* About Section */
+    .container-about {
+        display: flex;
+        flex-direction: column;
+        /* Gambar di atas, teks di bawah */
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .left-side {
+        margin-bottom: 40px;
+    }
+
+    .left-side img {
+        height: 15em;
+        /* Kecilkan gambar agar pas di layar */
+    }
+
+    .left-side .img-card.first,
+    .left-side .img-card.second {
+        top: 0;
+        bottom: 0;
+        /* Hapus efek melayang yang terlalu jauh di mobile */
+    }
+
+    .right-side {
+        text-align: center;
+        align-items: center;
+    }
+
+    .right-side h1 {
+        font-size: 2em;
+    }
+
+    .right-side p {
+        width: 100%;
+        /* Gunakan lebar penuh di mobile */
+    }
+
+    /* Contact Section */
+    .contact-container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 0;
+    }
+
+    .contact-text {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .contact-text h2 {
+        font-size: 28px;
+    }
+
+    .contact-text p {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-image .cover-img {
+        width: 100%;
+        /* Box pink memenuhi layar */
+        justify-content: center;
+    }
+
+    .contact-image img {
+        max-width: 80%;
+        /* Gambar tetap memiliki ruang napas */
+    }
+
+    /* Partnership Section */
+    .header-partnership h1 {
+        font-size: 20px;
+    }
+
+    .group {
+        gap: 1.5rem;
+        /* Perkecil jarak antar logo partner */
+    }
+
+    .card {
+        width: 8em;
+    }
+}

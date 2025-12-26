@@ -204,3 +204,79 @@ input:checked+.slider {
 input:checked+.slider::before {
     transform: translateX(22px);
 }
+
+@media screen and (max-width: 600px) {
+
+    /* Sembunyikan Checkbox */
+    #check {
+        display: none;
+    }
+
+    /* Munculkan Tombol Hamburger */
+    .menu-btn {
+        display: block;
+        font-size: 22px;
+        color: var(--color-primary-dark);
+        cursor: pointer;
+        order: 2;
+        /* Agar posisi fleksibel */
+    }
+
+    /* Ubah nav-links menjadi Side Menu */
+    .navbar .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        /* Sembunyi di kiri */
+        background-color: white;
+        flex-direction: column;
+        width: 80%;
+        height: 100vh;
+        padding: 40px 0;
+        transition: all 0.4s ease;
+        box-shadow: var(--shadow-medium);
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-links li {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding-left: 40px;
+        font-size: 20px;
+    }
+
+    /* Munculkan Menu saat Checkbox di-klik */
+    #check:checked~.nav-links {
+        left: 0;
+    }
+
+    /* Atur ulang posisi Utils di mobile */
+    .utils {
+        order: 1;
+        gap: 0.5em;
+    }
+
+    .lang-toggle {
+        display: none;
+        /* Sembunyikan toggle bahasa di mobile jika terlalu sempit */
+    }
+
+    .navbar {
+        padding: 0 15px;
+    }
+
+    nav .navbar .logo a img {
+        height: 3em;
+        /* Perkecil logo sedikit */
+    }
+}
+
+/* Sembunyikan hamburger di desktop */
+.menu-btn {
+    display: none;
+}

@@ -201,3 +201,94 @@
         flex-direction: column;
     }
 }
+
+@media screen and (max-width: 600px) {
+    /* --- PRODUCT PAGE RESPONSIVE --- */
+
+    .product-page {
+        margin-top: 2em;
+        padding: 40px 0;
+    }
+
+    /* Header & Banner */
+    .product-header {
+        padding: 3em 15px;
+        /* Kurangi padding agar banner tidak terlalu tinggi */
+        margin-bottom: 30px;
+    }
+
+    .product-header h1 {
+        font-size: 28px;
+        /* Ukuran teks lebih proporsional */
+    }
+
+    .product-header p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    /* Product Controls (Search & Filter) */
+    .product-controls {
+        padding: 0 20px;
+        margin-bottom: 30px;
+        gap: 12px;
+    }
+
+    .product-controls input,
+    .product-controls select {
+        width: 100%;
+        /* Buat input search dan filter selebar layar */
+        font-size: 16px;
+        /* Mencegah auto-zoom pada iOS saat fokus */
+        padding: 10px;
+    }
+
+    /* Product Grid - 2 Kolom */
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* Tetap 2 kolom agar compact */
+        gap: 15px;
+        /* Perkecil jarak antar produk */
+        padding: 0 15px;
+    }
+
+    /* Product Card Adjustments */
+    .product-card {
+        padding: 12px;
+        border-radius: 15px;
+    }
+
+    .product-card img {
+        height: 120px;
+        /* Kecilkan gambar agar muat dalam grid */
+        margin-bottom: 10px;
+    }
+
+    .product-card h3 {
+        font-size: 14px;
+        height: 34px;
+        /* Batasi tinggi teks judul agar grid sejajar */
+        overflow: hidden;
+    }
+
+    .product-card span {
+        font-size: 1.1em;
+    }
+
+    .bottom-card .product-btn {
+        padding: 0.5em 0.8em;
+        /* Tombol lebih kecil tapi tetap mudah di-klik */
+    }
+
+    /* Pagination */
+    .pagination {
+        margin-top: 40px;
+        gap: 5px;
+    }
+
+    .pagination button {
+        height: 35px;
+        width: 35px;
+        font-size: 13px;
+    }
+}

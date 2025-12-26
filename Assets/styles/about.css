@@ -9,7 +9,7 @@
   --accent-pink: #d8a7a7;
   --accent-pink-soft: #e6cfc8;
 
-  --shadow-soft: 0 10px 30px rgba(0,0,0,0.06);
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
 
 body {
@@ -57,12 +57,14 @@ body {
   border-radius: 20px;
 }
 
-.story-text h2, .commitment-text h2 {
+.story-text h2,
+.commitment-text h2 {
   font-size: 2em;
   margin-bottom: 0.5em;
 }
 
-.story-text p, .commitment-text p {
+.story-text p,
+.commitment-text p {
   line-height: 1.6;
   letter-spacing: 0.05em;
 }
@@ -143,5 +145,86 @@ body {
 
   .about-values {
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* --- ABOUT PAGE RESPONSIVE --- */
+
+  /* Hero Section */
+  .about-hero {
+    margin-top: 70px;
+    padding: 4em 20px;
+    background-attachment: scroll;
+    background-position: left;
+  }
+
+  .about-hero h1 {
+    font-size: 2.2em;
+  }
+
+  .about-hero p {
+    font-size: 0.95em;
+    line-height: 1.6;
+  }
+
+  /* Story & Commitment Section */
+  .about-story,
+  .about-commitment {
+    padding: 3em 20px;
+    gap: 2em;
+  }
+
+  /* Membalik urutan agar Teks selalu di atas Gambar pada section Commitment */
+  .about-commitment {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .story-text h2,
+  .commitment-text h2 {
+    font-size: 1.8em;
+  }
+
+  .story-text p,
+  .commitment-text p {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  /* Values Section */
+  .about-values {
+    padding: 4em 20px;
+    gap: 1.5em;
+  }
+
+  .value-card {
+    padding: 1.5em;
+  }
+
+  /* Highlight Section */
+  .about-highlight {
+    padding: 4em 20px;
+  }
+
+  .about-highlight h2 {
+    font-size: 1.6em;
+    line-height: 1.4;
+  }
+
+  /* CTA Section */
+  .about-cta {
+    padding: 5em 20px;
+  }
+
+  .about-cta h2 {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    width: 80%;
+    padding: 12px 0;
   }
 }

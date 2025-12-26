@@ -97,7 +97,7 @@
     cursor: pointer;
 }
 
-.card-list .item .quantity span:nth-child(2){
+.card-list .item .quantity span:nth-child(2) {
     background-color: transparent;
     color: black;
 }
@@ -141,9 +141,12 @@
     font-weight: 600;
     border-radius: var(--radius-sm);
 }
-.close-btn:hover, .checkout-btn:hover {
+
+.close-btn:hover,
+.checkout-btn:hover {
     filter: brightness(0.9);
 }
+
 .checkout-btn {
     color: white;
     background-color: var(--color-primary-dark);
@@ -151,4 +154,71 @@
 
 .close-btn {
     color: red;
+}
+
+@media screen and (max-width: 600px) {
+    /* --- CART TAB RESPONSIVE --- */
+
+    .cart-tab {
+        width: 100%;
+        /* Cart memenuhi layar di mobile */
+        grid-template-rows: auto 1fr auto;
+        /* Mengatur ulang proporsi baris */
+        padding: 15px;
+    }
+
+    .header-cart h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Mengatur ulang item di dalam cart */
+    .cart-tab .card-list .item {
+        /* Mengubah 4 kolom menjadi grid yang lebih fleksibel */
+        grid-template-columns: 60px 1fr 1fr;
+        grid-template-areas:
+            "img name name"
+            "img qty price";
+        gap: 10px;
+        padding: 10px;
+        align-items: center;
+    }
+
+    /* Penempatan elemen berdasarkan Area (agar lebih rapi) */
+    .card-list .card-image {
+        grid-area: img;
+    }
+
+    .card-list .item .name {
+        grid-area: name;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .card-list .item .quantity {
+        grid-area: qty;
+        justify-content: flex-start;
+        /* Sejajarkan ke kiri bawah foto */
+    }
+
+    .card-list .item .price {
+        grid-area: price;
+        text-align: right;
+        font-weight: bold;
+        color: var(--color-primary-dark);
+    }
+
+    .card-list .card-image img {
+        height: 60px;
+        /* Sedikit perkecil gambar */
+        margin-right: 0;
+    }
+
+    /* Tombol Navigasi Cart */
+    .cart-tab-btn {
+        margin-top: 15px;
+        grid-template-columns: 1fr 2fr;
+        /* Beri ruang lebih untuk tombol checkout */
+        height: 3.5em;
+        gap: 10px;
+    }
 }
