@@ -11,6 +11,12 @@
         "about": "Tentang",
         "contact": "Kontak"
     },
+    "navbarMobile": {
+        "home": "Beranda",
+        "product": "Produk",
+        "about": "Tentang",
+        "contact": "Kontak"
+    },
     "cart": {
         "title": "Keranjang Belanja",
         "checkout": "Proses Pembayaran",

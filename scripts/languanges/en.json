@@ -11,6 +11,12 @@
         "about": "About",
         "contact": "Contact"
     },
+    "navbarMobile": {
+        "home": "Home",
+        "product": "Product",
+        "about": "About",
+        "contact": "Contact"
+    },
     "cart": {
         "title": "Shopping Cart",
         "checkout": "Checkout",
