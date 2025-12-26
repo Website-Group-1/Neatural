@@ -31,8 +31,8 @@
         "cta": "Beli Sekarang"
     },
     "catalog": {
-        "title": "Produk Terlaris",
-        "cta": "Lihat Produk"
+        "title": "Dirancang untuk Kulit yang Layak Mendapat Perawatan",
+        "cta": "Jelajahi produk kami"
     },
     "homeAbout": {
         "label": "sedikit",
@@ -42,28 +42,32 @@
     },
     "about": {
         "header": {
-            "title": "Tentang Kami",
-            "subtitle": "Berdedikasi pada perawatan kulit alami dan kepercayaan diri yang sehat."
+            "title": "Semangat Kami terhadap Perawatan Kulit yang Penuh Perhatian",
+            "subtitle": "Kami percaya bahwa perawatan kulit seharusnya terasa sederhana, nyaman, dan efektif. Perjalanan kami dimulai dengan fokus pada mendukung keseimbangan alami kulit melalui produk yang lembut dan diformulasikan dengan penuh perhatian."
         },
         "section1": {
-            "title": "Siapa Kami",
-            "content": "Kami adalah brand skincare yang berfokus menghadirkan produk perawatan kulit alami, berkualitas tinggi, dan efektif untuk kebutuhan sehari-hari."
+            "title": "Berakar pada Kesederhanaan",
+            "content": "Kesederhanaan yang Mendasar Merek kami dibangun atas gagasan bahwa perawatan kulit tidak harus rumit. Dengan berfokus pada bahan-bahan esensial dan formulasi yang lembut, kami membantu Anda memulai perjalanan perawatan kulit dengan aman dan nyaman. Produk kami dirancang secara khusus untuk kulit muda dengan formula ringan dan praktis yang aman untuk penggunaan sehari-hari. Kami ingin perawatan kulit terasa menyenangkan dan mudah diakses oleh semua orang."
         },
         "section2": {
-            "title": "Misi Kami",
-            "content": "Misi kami adalah membantu semua orang mendapatkan kulit yang sehat dan bercahaya melalui produk skincare yang aman, alami, dan dibuat secara bertanggung jawab."
+            "title": "Temukan Perawatan Kulit yang Dirancang untuk Kenyamanan Sehari-hari",
+            "content": "Misi kami adalah membantu setiap orang mencapai kulit yang sehat dan bercahaya melalui produk perawatan kulit yang aman, alami, dan dibuat secara bertanggung jawab."
         },
         "section3": {
-            "title": "Visi Kami",
-            "content": "Menjadi brand skincare terpercaya yang mendukung perawatan diri, kepercayaan diri, dan keberlanjutan."
+            "title": "Komitmen Kami",
+            "content": "Komitmen Kami Kami berkomitmen untuk menyediakan perawatan kulit berkualitas tinggi dengan formula yang aman dan efektif. Setiap detail dipertimbangkan dengan cermat untuk memastikan produk kami aman dan berkualitas tinggi. Produk ini dikembangkan melalui riset mendalam dan menggunakan bahan-bahan yang dipilih secara hati-hati serta telah diuji secara dermatologis. Kami percaya bahwa kulit yang sehat adalah dasar dari kepercayaan diri, dan kami hadir untuk menemani Anda di setiap langkah perjalanan perawatan kulit Anda."
         },
         "values": {
-            "title": "Nilai Kami",
+            "title": "Nilai-Nilai Kami",
             "items": [
-                "Bahan Alami",
-                "Keamanan & Kualitas Kulit",
-                "Keberlanjutan",
-                "Kepercayaan Pelanggan"
+                "Formulasi Lembut",
+                "Bahan-Bahan yang Dipilih dengan Penuh Perhatian",
+                "Kenyamanan Sehari-hari"
+            ],
+            "content": [
+                "Formula yang dikembangkan dengan cermat dan dirancang untuk menghormati keseimbangan alami kulit Anda.",
+                "Setiap bahan dipilih dengan tujuan yang jelas, dengan fokus pada kenyamanan dan efektivitas.",
+                "Perawatan kulit yang menyatu dengan sempurna dalam rutinitas harian Anda."
             ]
         }
     },
