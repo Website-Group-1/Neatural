@@ -154,5 +154,169 @@
             "privacy": "Privasi",
             "terms": "Syarat & Ketentuan"
         }
+    },
+    "faq": {
+        "trusted": "DIANDALKAN OLEH",
+        "title": "Pertanyaan yang\nSering diajukan",
+        "items": {
+            "q1": {
+                "question": "Apakah produk ini aman untuk pemula dalam skincare?",
+                "answer": "Produk kami diformulasikan dengan bahan-bahan esensial dan lembut, sehingga aman digunakan oleh pemula yang baru memulai rutinitas perawatan kulit. Formula ringan kami nyaman digunakan setiap hari."
+            },
+            "q2": {
+                "question": "Apakah produk ini cocok untuk kulit sensitif?",
+                "answer": "Produk kami dikembangkan dengan memperhatikan keseimbangan alami kulit dan telah diuji secara dermatologis untuk meminimalkan risiko iritasi."
+            },
+            "q3": {
+                "question": "Bolehkah produk digunakan setiap hari?",
+                "answer": "Ya, seluruh produk kami dirancang untuk penggunaan harian dengan formula ringan dan praktis."
+            },
+            "q4": {
+                "question": "Apakah produk ini cocok untuk kulit muda?",
+                "answer": "Produk kami diformulasikan khusus untuk kulit muda dengan fokus pada kenyamanan dan kebutuhan dasar perawatan kulit."
+            }
+        }
+    },
+    "help": {
+        "trusted": "PENDUKUNG",
+        "title": "Pusat Bantuan",
+        "subtitle": "Temukan bantuan, panduan, dan jawaban untuk mendukung pengalaman perawatan kulit Anda.",
+        "cards": {
+            "c1": {
+                "title": "Mulai Menggunakan Produk",
+                "description": "Panduan dasar untuk membantu Anda memulai rutinitas perawatan kulit dengan aman dan nyaman.",
+                "linkText": "Pelajari lebih lanjut →"
+            },
+            "c2": {
+                "title": "Penggunaan & Perawatan",
+                "description": "Informasi seputar cara penggunaan produk, urutan skincare, dan tips perawatan harian.",
+                "linkText": "Pelajari lebih lanjut →"
+            },
+            "c3": {
+                "title": "Keamanan & Kecocokan Kulit",
+                "description": "Penjelasan mengenai keamanan produk, kulit sensitif, serta pengujian dermatologis.",
+                "linkText": "Pelajari lebih lanjut →"
+            },
+            "c4": {
+                "title": "Akun & Berlangganan",
+                "description": "Bantuan terkait newsletter, pembaruan informasi, dan komunikasi dari kami.",
+                "linkText": "Hubungi dukungan →"
+            },
+            "c5": {
+                "title": "Butuh Bantuan Lebih Lanjut?",
+                "description": "Jika Anda tidak menemukan jawaban yang dicari, tim kami siap membantu Anda.",
+                "button": "Hubungi Kami"
+            }
+        }
+    },
+    "support": {
+        "label": "DUKUNGAN",
+        "title": "Dukungan Pelanggan",
+        "subtitle": "Kami siap membantu Anda dengan pertanyaan, kendala, atau kebutuhan seputar produk dan layanan kami.",
+        "cards": {
+            "c1": {
+                "title": "Pertanyaan Umum",
+                "description": "Temukan jawaban atas pertanyaan yang sering diajukan mengenai produk, penggunaan, dan keamanan.",
+                "linkText": "Buka FAQ →"
+            },
+            "c2": {
+                "title": "Panduan & Bantuan",
+                "description": "Akses panduan penggunaan produk dan informasi tambahan untuk pengalaman perawatan kulit yang lebih nyaman.",
+                "linkText": "Buka Help Center →"
+            },
+            "c3": {
+                "title": "Hubungi Tim Kami",
+                "description": "Jika Anda membutuhkan bantuan lebih lanjut, silakan hubungi tim dukungan kami secara langsung.",
+                "button": "Hubungi Kami"
+            }
+        },
+        "info": {
+            "emailTitle": "Email Support",
+            "email": "support@neatural.com",
+            "hoursTitle": "Jam Operasional",
+            "hours": "Senin – Jumat\n09.00 – 17.00 WIB"
+        }
+    },
+    "privacy": {
+        "label": "HUKUM",
+        "title": "Kebijakan Privasi",
+        "updated": "Terakhir diperbarui: 26 Desember 2025",
+        "sections": {
+            "s1": {
+                "title": "1. Pendahuluan",
+                "content": "Privasi Anda penting bagi kami. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi pribadi Anda saat menggunakan website dan layanan kami."
+            },
+            "s2": {
+                "title": "2. Informasi yang Kami Kumpulkan",
+                "content": "Kami dapat mengumpulkan informasi pribadi seperti nama, alamat email, dan informasi lain yang Anda berikan secara sukarela melalui formulir kontak atau pendaftaran newsletter."
+            },
+            "s3": {
+                "title": "3. Penggunaan Informasi",
+                "content": "Informasi yang kami kumpulkan digunakan untuk menyediakan layanan, meningkatkan kualitas website, serta mengirimkan pembaruan atau informasi yang relevan dengan produk kami."
+            },
+            "s4": {
+                "title": "4. Perlindungan Data",
+                "content": "Kami menerapkan langkah-langkah keamanan yang wajar untuk melindungi informasi pribadi Anda dari akses, penggunaan, atau pengungkapan yang tidak sah."
+            },
+            "s5": {
+                "title": "5. Cookie",
+                "content": "Website kami dapat menggunakan cookie untuk meningkatkan pengalaman pengguna. Cookie membantu kami memahami bagaimana website digunakan sehingga kami dapat melakukan perbaikan berkelanjutan."
+            },
+            "s6": {
+                "title": "6. Tautan ke Website Lain",
+                "content": "Website kami dapat berisi tautan ke website lain. Kami tidak bertanggung jawab atas kebijakan privasi atau konten dari website pihak ketiga tersebut."
+            },
+            "s7": {
+                "title": "7. Perubahan Kebijakan",
+                "content": "Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu. Setiap perubahan akan ditampilkan di halaman ini dengan tanggal pembaruan terbaru."
+            },
+            "s8": {
+                "title": "8. Hubungi Kami",
+                "content": "Jika Anda memiliki pertanyaan mengenai Kebijakan Privasi ini, silakan hubungi kami melalui email di support@neatural.com."
+            }
+        }
+    },
+    "terms": {
+        "label": "HUKUM",
+        "title": "Syarat & Ketentuan",
+        "updated": "Terakhir diperbarui: 26 Desember 2025",
+        "sections": {
+            "s1": {
+                "title": "1. Pendahuluan",
+                "content": "Dengan mengakses dan menggunakan website ini, Anda menyetujui untuk terikat oleh Syarat & Ketentuan berikut. Jika Anda tidak setuju, mohon untuk tidak menggunakan layanan kami."
+            },
+            "s2": {
+                "title": "2. Penggunaan Website",
+                "content": "Website ini disediakan untuk penggunaan pribadi dan non-komersial. Anda setuju untuk tidak menggunakan website ini untuk aktivitas yang melanggar hukum atau merugikan pihak lain."
+            },
+            "s3": {
+                "title": "3. Informasi Produk",
+                "content": "Kami berusaha menampilkan informasi produk seakurat mungkin. Namun, kami tidak menjamin bahwa deskripsi, gambar, atau konten lainnya sepenuhnya bebas dari kesalahan."
+            },
+            "s4": {
+                "title": "4. Hak Kekayaan Intelektual",
+                "content": "Seluruh konten pada website ini, termasuk teks, gambar, logo, dan desain, merupakan milik kami dan dilindungi oleh hukum hak cipta. Penggunaan tanpa izin tertulis dilarang."
+            },
+            "s5": {
+                "title": "5. Batasan Tanggung Jawab",
+                "content": "Kami tidak bertanggung jawab atas kerugian langsung maupun tidak langsung yang timbul akibat penggunaan atau ketidakmampuan menggunakan website ini."
+            },
+            "s6": {
+                "title": "6. Perubahan Layanan",
+                "content": "Kami berhak untuk mengubah, menghentikan, atau memperbarui bagian mana pun dari website tanpa pemberitahuan sebelumnya."
+            },
+            "s7": {
+                "title": "7. Perubahan Syarat & Ketentuan",
+                "content": "Syarat & Ketentuan ini dapat diperbarui dari waktu ke waktu. Perubahan akan berlaku segera setelah dipublikasikan di halaman ini."
+            },
+            "s8": {
+                "title": "8. Hukum yang Berlaku",
+                "content": "Syarat & Ketentuan ini diatur dan ditafsirkan sesuai dengan hukum yang berlaku di Indonesia."
+            },
+            "s9": {
+                "title": "9. Hubungi Kami",
+                "content": "Jika Anda memiliki pertanyaan mengenai Syarat & Ketentuan ini, silakan hubungi kami melalui email di support@neatural.com."
+            }
+        }
     }
 }

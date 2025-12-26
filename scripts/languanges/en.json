@@ -154,5 +154,169 @@
             "privacy": "Privacy",
             "terms": "Terms & Condition"
         }
+    },
+    "faq": {
+        "trusted": "TRUSTED BY",
+        "title": "Frequently\nAsked Questions",
+        "items": {
+            "q1": {
+                "question": "Is this product safe for beginners in skincare?",
+                "answer": "Our products are formulated with essential and gentle ingredients, making them safe for beginners who are just starting their skincare routine. Our lightweight formulas are comfortable for daily use."
+            },
+            "q2": {
+                "question": "Is this product suitable for sensitive skin?",
+                "answer": "Our products are developed with attention to the skin’s natural balance and have been dermatologically tested to minimize the risk of irritation."
+            },
+            "q3": {
+                "question": "Can the product be used every day?",
+                "answer": "Yes, all of our products are designed for daily use with lightweight and practical formulas."
+            },
+            "q4": {
+                "question": "Is this product suitable for young skin?",
+                "answer": "Our products are specifically formulated for young skin, focusing on comfort and basic skincare needs."
+            }
+        }
+    },
+    "help": {
+        "trusted": "SUPPORT",
+        "title": "Help Center",
+        "subtitle": "Find help, guides, and answers to support your skincare experience.",
+        "cards": {
+            "c1": {
+                "title": "Getting Started with Products",
+                "description": "Basic guidance to help you start your skincare routine safely and comfortably.",
+                "linkText": "Learn more →"
+            },
+            "c2": {
+                "title": "Usage & Care",
+                "description": "Information about how to use the products, skincare order, and daily care tips.",
+                "linkText": "Learn more →"
+            },
+            "c3": {
+                "title": "Safety & Skin Compatibility",
+                "description": "Explanations regarding product safety, sensitive skin, and dermatological testing.",
+                "linkText": "Learn more →"
+            },
+            "c4": {
+                "title": "Account & Subscription",
+                "description": "Support related to newsletters, information updates, and communication from us.",
+                "linkText": "Contact support →"
+            },
+            "c5": {
+                "title": "Need Further Assistance?",
+                "description": "If you cannot find the answer you are looking for, our team is ready to help you.",
+                "button": "Contact Us"
+            }
+        }
+    },
+    "support": {
+        "label": "SUPPORT",
+        "title": "Customer Support",
+        "subtitle": "We are here to assist you with any questions, issues, or needs related to our products and services.",
+        "cards": {
+            "c1": {
+                "title": "General Questions",
+                "description": "Find answers to frequently asked questions about products, usage, and safety.",
+                "linkText": "Open FAQ →"
+            },
+            "c2": {
+                "title": "Guides & Assistance",
+                "description": "Access product usage guides and additional information for a more comfortable skincare experience.",
+                "linkText": "Open Help Center →"
+            },
+            "c3": {
+                "title": "Contact Our Team",
+                "description": "If you need further assistance, please contact our support team directly.",
+                "button": "Contact Us"
+            }
+        },
+        "info": {
+            "emailTitle": "Support Email",
+            "email": "support@neatural.com",
+            "hoursTitle": "Operating Hours",
+            "hours": "Monday – Friday\n09:00 – 17:00 WIB"
+        }
+    },
+    "privacy": {
+        "label": "LEGAL",
+        "title": "Privacy Policy",
+        "updated": "Last updated: December 26, 2025",
+        "sections": {
+            "s1": {
+                "title": "1. Introduction",
+                "content": "Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your personal information when you use our website and services."
+            },
+            "s2": {
+                "title": "2. Information We Collect",
+                "content": "We may collect personal information such as your name, email address, and other information that you voluntarily provide through contact forms or newsletter subscriptions."
+            },
+            "s3": {
+                "title": "3. Use of Information",
+                "content": "The information we collect is used to provide services, improve the quality of our website, and send updates or information relevant to our products."
+            },
+            "s4": {
+                "title": "4. Data Protection",
+                "content": "We implement reasonable security measures to protect your personal information from unauthorized access, use, or disclosure."
+            },
+            "s5": {
+                "title": "5. Cookies",
+                "content": "Our website may use cookies to enhance the user experience. Cookies help us understand how the website is used so we can make continuous improvements."
+            },
+            "s6": {
+                "title": "6. Links to Other Websites",
+                "content": "Our website may contain links to other websites. We are not responsible for the privacy policies or content of third-party websites."
+            },
+            "s7": {
+                "title": "7. Policy Changes",
+                "content": "We may update this Privacy Policy from time to time. Any changes will be posted on this page with the latest update date."
+            },
+            "s8": {
+                "title": "8. Contact Us",
+                "content": "If you have any questions regarding this Privacy Policy, please contact us via email at support@neatural.com."
+            }
+        }
+    },
+    "terms": {
+        "label": "LEGAL",
+        "title": "Terms & Conditions",
+        "updated": "Last updated: December 26, 2025",
+        "sections": {
+            "s1": {
+                "title": "1. Introduction",
+                "content": "By accessing and using this website, you agree to be bound by the following Terms & Conditions. If you do not agree, please do not use our services."
+            },
+            "s2": {
+                "title": "2. Website Use",
+                "content": "This website is provided for personal and non-commercial use. You agree not to use this website for any unlawful activities or activities that may harm other parties."
+            },
+            "s3": {
+                "title": "3. Product Information",
+                "content": "We strive to display product information as accurately as possible. However, we do not guarantee that descriptions, images, or other content are completely free from errors."
+            },
+            "s4": {
+                "title": "4. Intellectual Property Rights",
+                "content": "All content on this website, including text, images, logos, and designs, is our property and is protected by copyright laws. Unauthorized use without written permission is prohibited."
+            },
+            "s5": {
+                "title": "5. Limitation of Liability",
+                "content": "We are not responsible for any direct or indirect damages arising from the use of or inability to use this website."
+            },
+            "s6": {
+                "title": "6. Service Changes",
+                "content": "We reserve the right to modify, suspend, or update any part of the website without prior notice."
+            },
+            "s7": {
+                "title": "7. Changes to Terms & Conditions",
+                "content": "These Terms & Conditions may be updated from time to time. Changes will take effect immediately after being published on this page."
+            },
+            "s8": {
+                "title": "8. Governing Law",
+                "content": "These Terms & Conditions are governed by and interpreted in accordance with the laws of Indonesia."
+            },
+            "s9": {
+                "title": "9. Contact Us",
+                "content": "If you have any questions regarding these Terms & Conditions, please contact us via email at support@neatural.com."
+            }
+        }
     }
 }
