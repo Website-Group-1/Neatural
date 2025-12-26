@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare | Faq</title>
+
+    <link rel="stylesheet" href="../../Assets/styles/components/navbar.css">
+    <link rel="stylesheet" href="../../Assets/styles/components/cartTab.css">
+    <link rel="stylesheet" href="../../Assets/styles/components/footer.css">
+    <link rel="shortcut icon" href="../../Assets/img/logo-website.png" type="image/x-icon">
+    <style>
+        .terms-section {
+            padding: 90px 20px;
+            background: #f7f9fc;
+            text-align: center;
+        }
+
+        .terms-label {
+            font-size: 12px;
+            letter-spacing: 2px;
+            color: #8a8a8a;
+            margin-bottom: 10px;
+        }
+
+        .terms-title {
+            font-size: 38px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .terms-updated {
+            font-size: 13px;
+            color: #777;
+            margin-bottom: 60px;
+        }
+
+        .terms-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .terms-block {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 24px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        .terms-block h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .terms-block p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="navbar">
+            <span class="logo">
+                <a href="home.html">
+                    <img src="../../Assets/img/logo-website.png" alt="logo-website">
+                </a>
+            </span>
+
+            <div class="menu">
+                <ul class="nav-links">
+                    <li><a href="../../../home.html" data-i18n="navbar.home"></a></li>
+                    <li><a href="../../pages/product.html" data-i18n="navbar.product"></a></li>
+                    <li><a href="../../pages/about.html" data-i18n="navbar.about"></a></li>
+                    <li><a href="../../pages/contact.html" data-i18n="navbar.contact"></a></li>
+                </ul>
+            </div>
+
+            <div class="utils">
+                <div class="cart-icon">
+                    <button class="utils-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                    <span class="totalCart">0</span>
+                </div>
+
+                <!-- Language Toggle -->
+                <div class="lang-toggle">
+                    <span class="lang-label">EN</span>
+                    <label class="switch">
+                        <input type="checkbox" id="langToggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span class="lang-label">ID</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bottom-nav">
+        <a href="home.html" class="nav-item">
+            <i class="fa-solid fa-house"></i>
+            <span data-i18n="navbarMobile.home"></span>
+        </a>
+        <a href="pages/product.html" class="nav-item">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span data-i18n="navbarMobile.product"></span>
+        </a>
+        <a href="pages/about.html" class="nav-item">
+            <i class="fa-solid fa-circle-info"></i>
+            <span data-i18n="navbarMobile.about"></span>
+        </a>
+        <a href="pages/contact.html" class="nav-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span data-i18n="navbarMobile.contact"></span>
+        </a>
+    </div>
+
+    <!-- CART TAB -->
+    <div class="cart-tab">
+        <div class="header-cart">
+            <h2 data-i18n="cart.title"></h2>
+            <hr>
+        </div>
+
+        <div class="card-list"></div>
+
+        <div class="cart-tab-btn">
+            <button class="close-btn">
+                <i class="fa-solid fa-x"></i>
+            </button>
+            <button class="checkout-btn" data-i18n="cart.checkout"></button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <section class="terms-section">
+        <p class="terms-label">LEGAL</p>
+        <h2 class="terms-title">Terms & Conditions</h2>
+        <p class="terms-updated">Terakhir diperbarui: 26 Desember 2025</p>
+
+        <div class="terms-container">
+
+            <div class="terms-block">
+                <h3>1. Pendahuluan</h3>
+                <p>
+                    Dengan mengakses dan menggunakan website ini, Anda menyetujui untuk terikat oleh
+                    Syarat & Ketentuan berikut. Jika Anda tidak setuju, mohon untuk tidak menggunakan layanan kami.
+                </p>
+            </div>
+
+            <div class="terms-block">
+                <h3>2. Penggunaan Website</h3>
+                <p>
+                    Website ini disediakan untuk penggunaan pribadi dan non-komersial. Anda setuju untuk
+                    tidak menggunakan website ini untuk aktivitas yang melanggar hukum atau merugikan pihak lain.
+                </p>
+            </div>
+
+            <div class="terms-block">
+                <h3>3. Informasi Produk</h3>
+                <p>
+                    Kami berusaha menampilkan informasi produk seakurat mungkin. Namun, kami tidak menjamin
+                    bahwa deskripsi, gambar, atau konten lainnya sepenuhnya bebas dari kesalahan.
+                </p>
+            </div>
+
+            <div class="terms-block">
+                <h3>4. Hak Kekayaan Intelektual</h3>
+                <p>
+                    Seluruh konten pada website ini, termasuk teks, gambar, logo, dan desain, merupakan milik
+                    kami dan dilindungi oleh hukum hak cipta. Penggunaan tanpa izin tertulis dilarang.
+                </p>
+            </div>
+
+            <div class="terms-block">
+                <h3>5. Batasan Tanggung Jawab</h3>
+                <p>
+                    Kami tidak bertanggung jawab atas kerugian langsung maupun tidak langsung yang timbul
+                    akibat penggunaan atau ketidakmampuan menggunakan website ini.
+                </p>
+            </div>
+
+            <div class="terms-block">
+                <h3>6. Perubahan Layanan</h3>
+                <p>
+                    Kami berhak untuk mengubah, menghentikan, atau memperbarui bagian mana pun dari website
+                    tanpa pemberitahuan sebelumnya.
+                </p>
+            </div>
+
+            <div class="terms-block">
+                <h3>7. Perubahan Syarat & Ketentuan</h3>
+                <p>
+                    Syarat & Ketentuan ini dapat diperbarui dari waktu ke waktu. Perubahan akan berlaku
+                    segera setelah dipublikasikan di halaman ini.
+                </p>
+            </div>
+
+            <div class="terms-block">
+                <h3>8. Hukum yang Berlaku</h3>
+                <p>
+                    Syarat & Ketentuan ini diatur dan ditafsirkan sesuai dengan hukum yang berlaku di Indonesia.
+                </p>
+            </div>
+
+            <div class="terms-block">
+                <h3>9. Hubungi Kami</h3>
+                <p>
+                    Jika Anda memiliki pertanyaan mengenai Syarat & Ketentuan ini, silakan hubungi kami melalui
+                    email di <strong>support@neatural.com</strong>.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="home.html"><img src="../../Assets/img/logo-website.png"></a>
+                    <h3 data-i18n="footer.brandText"></h3>
+                </div>
+
+                <div class="footer-newsletter">
+                    <span data-i18n="footer.newsletter.title"></span>
+                    <div class="newsletter-input">
+                        <input type="email" data-i18n-placeholder="footer.newsletter.placeholder">
+                        <button data-i18n="footer.newsletter.button"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4 data-i18n="footer.contactInfo.title"></h4>
+                    <p data-i18n="footer.contactInfo.email"></p>
+                    <p data-i18n="footer.contactInfo.phone"></p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.company.title"></h4>
+                    <a href="../../../home.html" data-i18n="footer.company.home"></a>
+                    <a href="../../pages/product.html" data-i18n="footer.company.product"></a>
+                    <a href="../../pages/about.html" data-i18n="footer.company.about"></a>
+                    <a href="../../pages/contact.html" data-i18n="footer.company.contact"></a>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.help.title"></h4>
+                    <a href="faq.html" data-i18n="footer.help.faq"></a>
+                    <a href="help_center.html" data-i18n="footer.help.helpCenter"></a>
+                    <a href="support.html" data-i18n="footer.help.support"></a>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.follow.title"></h4>
+                    <div class="socials">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Website-Group-1"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright"></p>
+                <div class="footer-policy">
+                    <a href="privacy.html" data-i18n="footer.policy.privacy"></a>
+                    <a href="terms_condition.html" data-i18n="footer.policy.terms"></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/ebb2aa59d3.js"></script>
+    <script src="../../scripts/main.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

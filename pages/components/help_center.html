@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare | Faq</title>
+
+    <link rel="stylesheet" href="../../Assets/styles/components/navbar.css">
+    <link rel="stylesheet" href="../../Assets/styles/components/cartTab.css">
+    <link rel="stylesheet" href="../../Assets/styles/components/footer.css">
+    <link rel="shortcut icon" href="../../Assets/img/logo-website.png" type="image/x-icon">
+    <style>
+        .help-section {
+            padding: 90px 20px;
+            background: #f7f9fc;
+            text-align: center;
+        }
+
+        .help-trusted {
+            font-size: 12px;
+            letter-spacing: 2px;
+            color: #8a8a8a;
+            margin-bottom: 10px;
+        }
+
+        .help-title {
+            font-size: 38px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .help-subtitle {
+            max-width: 520px;
+            margin: 0 auto 60px;
+            font-size: 15px;
+            color: #666;
+        }
+
+        .help-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .help-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 28px;
+            text-align: left;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .help-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+        }
+
+        .help-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .help-card p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 18px;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 18px;
+            background-color: #4a6cf7;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .help-card a {
+            font-size: 14px;
+            text-decoration: none;
+            color: #4a6cf7;
+            font-weight: 500;
+        }
+
+        .help-highlight {
+            background: #eef3fb;
+            grid-column: span 2;
+        }
+
+        @media screen and (max-width: 600px){
+            .help-container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="navbar">
+            <span class="logo">
+                <a href="home.html">
+                    <img src="../../Assets/img/logo-website.png" alt="logo-website">
+                </a>
+            </span>
+
+            <div class="menu">
+                <ul class="nav-links">
+                    <li><a href="../../../home.html" data-i18n="navbar.home"></a></li>
+                    <li><a href="../../pages/product.html" data-i18n="navbar.product"></a></li>
+                    <li><a href="../../pages/about.html" data-i18n="navbar.about"></a></li>
+                    <li><a href="../../pages/contact.html" data-i18n="navbar.contact"></a></li>
+                </ul>
+            </div>
+
+            <div class="utils">
+                <div class="cart-icon">
+                    <button class="utils-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                    <span class="totalCart">0</span>
+                </div>
+
+                <!-- Language Toggle -->
+                <div class="lang-toggle">
+                    <span class="lang-label">EN</span>
+                    <label class="switch">
+                        <input type="checkbox" id="langToggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span class="lang-label">ID</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bottom-nav">
+        <a href="home.html" class="nav-item">
+            <i class="fa-solid fa-house"></i>
+            <span data-i18n="navbarMobile.home"></span>
+        </a>
+        <a href="pages/product.html" class="nav-item">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span data-i18n="navbarMobile.product"></span>
+        </a>
+        <a href="pages/about.html" class="nav-item">
+            <i class="fa-solid fa-circle-info"></i>
+            <span data-i18n="navbarMobile.about"></span>
+        </a>
+        <a href="pages/contact.html" class="nav-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span data-i18n="navbarMobile.contact"></span>
+        </a>
+    </div>
+
+    <!-- CART TAB -->
+    <div class="cart-tab">
+        <div class="header-cart">
+            <h2 data-i18n="cart.title"></h2>
+            <hr>
+        </div>
+
+        <div class="card-list"></div>
+
+        <div class="cart-tab-btn">
+            <button class="close-btn">
+                <i class="fa-solid fa-x"></i>
+            </button>
+            <button class="checkout-btn" data-i18n="cart.checkout"></button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <section class="help-section">
+        <p class="help-trusted">SUPPORT</p>
+        <h2 class="help-title">Help Center</h2>
+        <p class="help-subtitle">
+            Temukan bantuan, panduan, dan jawaban untuk mendukung pengalaman perawatan kulit Anda.
+        </p>
+
+        <div class="help-container">
+
+            <div class="help-card">
+                <h3>Mulai Menggunakan Produk</h3>
+                <p>
+                    Panduan dasar untuk membantu Anda memulai rutinitas perawatan kulit dengan aman dan nyaman.
+                </p>
+                <a href="faq.html">Pelajari lebih lanjut →</a>
+            </div>
+
+            <div class="help-card">
+                <h3>Penggunaan & Perawatan</h3>
+                <p>
+                    Informasi seputar cara penggunaan produk, urutan skincare, dan tips perawatan harian.
+                </p>
+                <a href="faq.html">Pelajari lebih lanjut →</a>
+            </div>
+
+            <div class="help-card">
+                <h3>Keamanan & Kecocokan Kulit</h3>
+                <p>
+                    Penjelasan mengenai keamanan produk, kulit sensitif, serta pengujian dermatologis.
+                </p>
+                <a href="faq.html">Pelajari lebih lanjut →</a>
+            </div>
+
+            <div class="help-card">
+                <h3>Akun & Berlangganan</h3>
+                <p>
+                    Bantuan terkait newsletter, pembaruan informasi, dan komunikasi dari kami.
+                </p>
+                <a href="support.html">Hubungi dukungan →</a>
+            </div>
+
+            <div class="help-card help-highlight">
+                <h3>Butuh Bantuan Lebih Lanjut?</h3>
+                <p>
+                    Jika Anda tidak menemukan jawaban yang dicari, tim kami siap membantu Anda.
+                </p>
+                <div class="help-button">
+                    <a href="../contact.html" class="btn-primary" style="color: #ffffff;">Hubungi Kami</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="home.html"><img src="../../Assets/img/logo-website.png"></a>
+                    <h3 data-i18n="footer.brandText"></h3>
+                </div>
+
+                <div class="footer-newsletter">
+                    <span data-i18n="footer.newsletter.title"></span>
+                    <div class="newsletter-input">
+                        <input type="email" data-i18n-placeholder="footer.newsletter.placeholder">
+                        <button data-i18n="footer.newsletter.button"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4 data-i18n="footer.contactInfo.title"></h4>
+                    <p data-i18n="footer.contactInfo.email"></p>
+                    <p data-i18n="footer.contactInfo.phone"></p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.company.title"></h4>
+                    <a href="../../../home.html" data-i18n="footer.company.home"></a>
+                    <a href="../../pages/product.html" data-i18n="footer.company.product"></a>
+                    <a href="../../pages/about.html" data-i18n="footer.company.about"></a>
+                    <a href="../../pages/contact.html" data-i18n="footer.company.contact"></a>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.help.title"></h4>
+                    <a href="faq.html" data-i18n="footer.help.faq"></a>
+                    <a href="help_center.html" data-i18n="footer.help.helpCenter"></a>
+                    <a href="support.html" data-i18n="footer.help.support"></a>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.follow.title"></h4>
+                    <div class="socials">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Website-Group-1"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright"></p>
+                <div class="footer-policy">
+                    <a href="privacy.html" data-i18n="footer.policy.privacy"></a>
+                    <a href="terms_condition.html" data-i18n="footer.policy.terms"></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/ebb2aa59d3.js"></script>
+    <script src="../../scripts/main.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
