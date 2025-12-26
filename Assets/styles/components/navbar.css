@@ -121,6 +121,7 @@ nav .navbar .logo a img {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1em;
 }
 
 .utils .utils-btn {
