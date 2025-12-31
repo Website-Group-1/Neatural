@@ -146,6 +146,7 @@ document.addEventListener('click', (event) => {
 });
 
 checkoutButton?.addEventListener("click", () => {
+    cartTab.classList.remove("active");
     if (listCartProducts.length === 0) {
         Swal.fire({
             title: "Oops!",

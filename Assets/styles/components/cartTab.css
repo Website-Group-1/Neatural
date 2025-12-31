@@ -161,9 +161,8 @@
 
     .cart-tab {
         width: 100%;
-        /* Cart memenuhi layar di mobile */
+        margin-bottom: 4em;
         grid-template-rows: auto 1fr auto;
-        /* Mengatur ulang proporsi baris */
         padding: 15px;
     }
 
