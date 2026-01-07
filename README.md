@@ -1,4 +1,4 @@
-<div style="display: flex; justify-content: center;align-items: center;">
+<div style="display: flex; justify-content: center;align-items: center;vertical-align: middle;">
   <h1 align="center">
     <img
       src="/Assets/img/logo-website.png"
