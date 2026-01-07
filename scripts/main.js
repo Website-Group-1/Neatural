@@ -29,13 +29,11 @@ const loadLanguage = async (lang) => {
         const res = await fetch(`/scripts/languanges/${lang}.json`);
         langData = await res.json();
 
-        // Pastikan toggle sesuai dengan bahasa yang sedang diload
         if (langToggle) langToggle.checked = (lang === "id");
 
         applyLanguage();
         localStorage.setItem("lang", lang);
 
-        // Re-render UI yang mengandung data produk
         if (currentProducts.length > 0) {
             paginateProducts(currentProducts, currentPage);
         } else {
@@ -84,7 +82,6 @@ langToggle?.addEventListener("change", () => {
 });
 
 bottomNavLinks.forEach(link => {
-    // Jika path link sama dengan path URL saat ini
     if (link.getAttribute('href').includes(currentPath)) {
         link.classList.add('active');
     }
