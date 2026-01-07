@@ -1,7 +1,14 @@
-  <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
-    <img src="/Assets/img/logo-website.png" width="40" />
-    <h1 style="margin: 0;">Neatural — Natural Skincare Website</h1>
-  </div>
+<h1 align="center">
+  <img
+    src="Neatural/Assets/img/logo-website.png"
+    alt="Neatural Logo"
+    width="40"
+    style="vertical-align: middle;"
+  />
+  <span style="vertical-align: middle;">
+    Neatural — Natural Skincare Website
+  </span>
+</h1>
 
 Neatural is a modern skincare website designed to promote natural, gentle, and sustainable beauty products.  
 This website focuses on a clean user interface, smooth user experience, and simple yet elegant design to reflect the brand’s natural values.
