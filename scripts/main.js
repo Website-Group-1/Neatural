@@ -100,8 +100,8 @@ closeButton?.addEventListener("click", () => {
 
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        menuCheckbox.checked = false; // Uncheck checkbox untuk menutup menu
-        document.body.style.overflow = 'auto'; // Kembalikan scroll body
+        menuCheckbox.checked = false;
+        document.body.style.overflow = 'auto';=
     });
 });
 
@@ -269,7 +269,6 @@ const renderPagination = (totalItems) => {
     let startPage = Math.max(1, currentPage - 1);
     let endPage = Math.min(totalPages, currentPage + 1);
 
-    // pastikan selalu max 3 angka
     if (currentPage === 1) endPage = 2;
     if (currentPage === totalPages) startPage = totalPages - 1;
 
