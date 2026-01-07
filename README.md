@@ -1,8 +1,8 @@
 <h1 align="center">
   <img
-    src="Neatural/Assets/img/logo-website.png"
+    src="/Assets/img/logo-website.png"
     alt="Neatural Logo"
-    width="40"
+    width="60"
     style="vertical-align: middle;"
   />
   <span style="vertical-align: middle;">
