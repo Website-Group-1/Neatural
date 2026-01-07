@@ -1,4 +1,4 @@
-# 🌿 Neatural — Natural Skincare Website
+# ![Neatural Logo Website](Neatural/Assets/img/logo-website.png) Neatural — Natural Skincare Website
 
 Neatural is a modern skincare website designed to promote natural, gentle, and sustainable beauty products.  
 This website focuses on a clean user interface, smooth user experience, and simple yet elegant design to reflect the brand’s natural values.
