@@ -1,5 +1,5 @@
-<div style="display: flex; justify-content: center;align-items: center;vertical-align: middle;">
-  <h1 align="center">
+<div>
+  <h1 align="middle">
     <img
       src="/Assets/img/logo-website.png"
       alt="Neatural Logo"
