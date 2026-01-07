@@ -1,6 +1,6 @@
 <div>
 <h1 align="center">
-  <img src="Neatural/Assets/img/logo-website.png" width="36" />
+  <img src="/Assets/img/logo-website.png" width="36" />
   &nbsp;Neatural — Natural Skincare Website
 </h1>
 </div>
