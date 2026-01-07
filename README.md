@@ -6,7 +6,7 @@
       width="60"
       style="vertical-align: middle;"
     />
-    <span >
+    <span align="middle">
       Neatural — Natural Skincare Website
     </span>
   </h1>
