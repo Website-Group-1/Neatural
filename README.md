@@ -109,10 +109,10 @@ cd Neatural
 <p align="center">
 Made by Group 1
 </p>
-|No|Name|NIM|Jobdesk|
-|---|---|---|---|
-|1|Andika Vio Pratama|243200314|Team Leader, Logic Handler : Make Cart Tab, make a pagination, make the website responsive, and make bilingual feature|
-|2|Muhammad Feriansyah Lindu Aji|243200304|a whole landing page|
-|3|Ashfa Dina Amalia|243200303|Designer Project, About page|
-|4|Arla Safitri|243200302|Designer Project, Contact page|
-|5|Abdulrizaq Godana|Logic Handler : make filter feature|
+| No | Name | NIM | Jobdesk |
+| --- | --- | --- | --- |
+| 1 | Andika Vio Pratama | 243200314 | Team Leader, Logic Handler : Make Cart Tab, make a pagination, make the website responsive, and make bilingual feature |
+| 2 | Muhammad Feriansyah Lindu Aji | 243200304 | a whole landing page |
+| 3 | Ashfa Dina Amalia | 243200303 | Designer Project, About page |
+| 4 | Arla Safitri | 243200302 | Designer Project, Contact page |
+| 5 | Abdulrizaq Godana| 243200345 | Logic Handler : make filter feature |
