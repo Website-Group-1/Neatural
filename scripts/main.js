@@ -98,7 +98,7 @@ closeButton?.addEventListener("click", () => {
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         menuCheckbox.checked = false;
-        document.body.style.overflow = 'auto';=
+        document.body.style.overflow = 'auto';
     });
 });
 
